@@ -1,0 +1,860 @@
+[ {
+  "@id" : "_:genid1",
+  "@type" : [ "http://xmlns.com/foaf/0.1/Agent" ],
+  "http://xmlns.com/foaf/0.1/name" : [ {
+    "@language" : "en",
+    "@value" : "SmartBridgeFM project"
+  } ]
+}, {
+  "@id" : "_:genid10",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#allValuesFrom" : [ {
+    "@id" : "http://lov.linkeddata.es/dataset/lov/vocabs/bmon/RainIntensity"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://www.w3.org/ns/sosa/observes"
+  } ]
+}, {
+  "@id" : "_:genid11",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#allValuesFrom" : [ {
+    "@id" : "http://lov.linkeddata.es/dataset/lov/vocabs/bmon/RelativeHumidity"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://www.w3.org/ns/sosa/observes"
+  } ]
+}, {
+  "@id" : "_:genid12",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#allValuesFrom" : [ {
+    "@id" : "http://lov.linkeddata.es/dataset/lov/vocabs/bmon/Strain"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://www.w3.org/ns/sosa/observes"
+  } ]
+}, {
+  "@id" : "_:genid13",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#allValuesFrom" : [ {
+    "@id" : "http://lov.linkeddata.es/dataset/lov/vocabs/bmon/Temperature"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://www.w3.org/ns/sosa/observes"
+  } ]
+}, {
+  "@id" : "_:genid14",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#allValuesFrom" : [ {
+    "@id" : "http://lov.linkeddata.es/dataset/lov/vocabs/bmon/WindDirection"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://www.w3.org/ns/sosa/observes"
+  } ]
+}, {
+  "@id" : "_:genid15",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#allValuesFrom" : [ {
+    "@id" : "http://lov.linkeddata.es/dataset/lov/vocabs/bmon/WindSpeed"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://www.w3.org/ns/sosa/observes"
+  } ]
+}, {
+  "@id" : "_:genid16",
+  "@type" : [ "http://xmlns.com/foaf/0.1/Agent" ],
+  "http://xmlns.com/foaf/0.1/name" : [ {
+    "@language" : "en",
+    "@value" : "SmartBridgeFM project"
+  } ]
+}, {
+  "@id" : "_:genid2",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#allValuesFrom" : [ {
+    "@id" : "http://lov.linkeddata.es/dataset/lov/vocabs/bmon/Acceleration"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://www.w3.org/ns/sosa/observes"
+  } ]
+}, {
+  "@id" : "_:genid3",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#allValuesFrom" : [ {
+    "@id" : "http://lov.linkeddata.es/dataset/lov/vocabs/bmon/AirPressure"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://www.w3.org/ns/sosa/observes"
+  } ]
+}, {
+  "@id" : "_:genid4",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#allValuesFrom" : [ {
+    "@id" : "http://lov.linkeddata.es/dataset/lov/vocabs/bmon/Corrosion"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://www.w3.org/ns/sosa/observes"
+  } ]
+}, {
+  "@id" : "_:genid5",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#allValuesFrom" : [ {
+    "@id" : "http://lov.linkeddata.es/dataset/lov/vocabs/bmon/Displacement"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://www.w3.org/ns/sosa/observes"
+  } ]
+}, {
+  "@id" : "_:genid6",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#allValuesFrom" : [ {
+    "@id" : "http://lov.linkeddata.es/dataset/lov/vocabs/bmon/FiberTemperatureSensor"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://lov.linkeddata.es/dataset/lov/vocabs/bmon/hasCompensatinTemperature"
+  } ]
+}, {
+  "@id" : "_:genid7",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#allValuesFrom" : [ {
+    "@id" : "http://lov.linkeddata.es/dataset/lov/vocabs/bmon/FiberStrain"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://lov.linkeddata.es/dataset/lov/vocabs/bmon/hasFiberStrain"
+  } ]
+}, {
+  "@id" : "_:genid8",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#allValuesFrom" : [ {
+    "@id" : "http://lov.linkeddata.es/dataset/lov/vocabs/bmon/RainAccumulation"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://www.w3.org/ns/sosa/observes"
+  } ]
+}, {
+  "@id" : "_:genid9",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#allValuesFrom" : [ {
+    "@id" : "http://lov.linkeddata.es/dataset/lov/vocabs/bmon/RainDuration"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://www.w3.org/ns/sosa/observes"
+  } ]
+}, {
+  "@id" : "http://lov.linkeddata.es/dataset/lov/vocabs/bmon/",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Ontology" ],
+  "http://purl.org/dc/terms/created" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#date",
+    "@value" : "2018-08-31"
+  } ],
+  "http://purl.org/dc/terms/creator" : [ {
+    "@id" : "_:genid1"
+  } ],
+  "http://purl.org/dc/terms/description" : [ {
+    "@language" : "en",
+    "@value" : "Ontology for bridge monitoring that extends SSN with bridge specific concepts."
+  } ],
+  "http://purl.org/dc/terms/license" : [ {
+    "@id" : "http://www.opengeospatial.org/ogc/Software"
+  }, {
+    "@id" : "http://www.w3.org/Consortium/Legal/2015/copyright-software-and-document"
+  } ],
+  "http://purl.org/dc/terms/title" : [ {
+    "@language" : "en",
+    "@value" : "Bridge Monitoring Ontology"
+  } ],
+  "http://purl.org/vocab/vann/preferredNamespacePrefix" : [ {
+    "@value" : "bmon"
+  } ],
+  "http://purl.org/vocab/vann/preferredNamespaceUri" : [ {
+    "@value" : "http://lov.linkeddata.es/dataset/lov/vocabs/bmon/"
+  } ],
+  "http://www.w3.org/2002/07/owl#imports" : [ {
+    "@id" : "http://www.w3.org/ns/sosa/"
+  }, {
+    "@id" : "http://www.w3.org/ns/ssn/"
+  } ]
+}, {
+  "@id" : "http://lov.linkeddata.es/dataset/lov/vocabs/bmon/Acceleration",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.w3.org/ns/sosa/ObservableProperty"
+  } ]
+}, {
+  "@id" : "http://lov.linkeddata.es/dataset/lov/vocabs/bmon/AccelerationSensor",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://lov.linkeddata.es/dataset/lov/vocabs/bmon/EntitySensor"
+  }, {
+    "@id" : "_:genid2"
+  } ]
+}, {
+  "@id" : "http://lov.linkeddata.es/dataset/lov/vocabs/bmon/AirPressure",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.w3.org/ns/sosa/ObservableProperty"
+  } ]
+}, {
+  "@id" : "http://lov.linkeddata.es/dataset/lov/vocabs/bmon/AirPressureSensor",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://lov.linkeddata.es/dataset/lov/vocabs/bmon/WeatherSensor"
+  }, {
+    "@id" : "_:genid3"
+  } ]
+}, {
+  "@id" : "http://lov.linkeddata.es/dataset/lov/vocabs/bmon/AlarmRange",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Value outside of acceptable range"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://lov.linkeddata.es/dataset/lov/vocabs/bmon/LimitRange"
+  } ]
+}, {
+  "@id" : "http://lov.linkeddata.es/dataset/lov/vocabs/bmon/Any",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://lov.linkeddata.es/dataset/lov/vocabs/bmon/HistoryFunctionType"
+  } ]
+}, {
+  "@id" : "http://lov.linkeddata.es/dataset/lov/vocabs/bmon/Avg",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://lov.linkeddata.es/dataset/lov/vocabs/bmon/HistoryFunctionType"
+  } ]
+}, {
+  "@id" : "http://lov.linkeddata.es/dataset/lov/vocabs/bmon/Corrosion",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.w3.org/ns/sosa/ObservableProperty"
+  } ]
+}, {
+  "@id" : "http://lov.linkeddata.es/dataset/lov/vocabs/bmon/CorrosionSensor",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://lov.linkeddata.es/dataset/lov/vocabs/bmon/StructureSensor"
+  }, {
+    "@id" : "_:genid4"
+  } ]
+}, {
+  "@id" : "http://lov.linkeddata.es/dataset/lov/vocabs/bmon/DataRequest",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Parameters of a request"
+  } ]
+}, {
+  "@id" : "http://lov.linkeddata.es/dataset/lov/vocabs/bmon/Displacement",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.w3.org/ns/sosa/ObservableProperty"
+  } ]
+}, {
+  "@id" : "http://lov.linkeddata.es/dataset/lov/vocabs/bmon/DisplacementSensor",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://lov.linkeddata.es/dataset/lov/vocabs/bmon/EntitySensor"
+  }, {
+    "@id" : "_:genid5"
+  } ]
+}, {
+  "@id" : "http://lov.linkeddata.es/dataset/lov/vocabs/bmon/Entity",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Entity that is observed or with respect to whom the location offset is specified"
+  } ]
+}, {
+  "@id" : "http://lov.linkeddata.es/dataset/lov/vocabs/bmon/EntitySensor",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Sensor observing a fixed entity"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.w3.org/ns/sosa/Sensor"
+  } ]
+}, {
+  "@id" : "http://lov.linkeddata.es/dataset/lov/vocabs/bmon/FiberStrain",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://lov.linkeddata.es/dataset/lov/vocabs/bmon/StrainGauge"
+  } ]
+}, {
+  "@id" : "http://lov.linkeddata.es/dataset/lov/vocabs/bmon/FiberStrainTemperatureCompensated",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://lov.linkeddata.es/dataset/lov/vocabs/bmon/FiberStrain"
+  }, {
+    "@id" : "_:genid6"
+  }, {
+    "@id" : "_:genid7"
+  } ]
+}, {
+  "@id" : "http://lov.linkeddata.es/dataset/lov/vocabs/bmon/FiberTemperatureSensor",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://lov.linkeddata.es/dataset/lov/vocabs/bmon/TemperatureSensor"
+  } ]
+}, {
+  "@id" : "http://lov.linkeddata.es/dataset/lov/vocabs/bmon/HistoryFunctionType",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "http://lov.linkeddata.es/dataset/lov/vocabs/bmon/HttpRequest",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Parameters of a request using REST"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://lov.linkeddata.es/dataset/lov/vocabs/bmon/DataRequest"
+  } ]
+}, {
+  "@id" : "http://lov.linkeddata.es/dataset/lov/vocabs/bmon/LadderReferencePotentialSensor",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://lov.linkeddata.es/dataset/lov/vocabs/bmon/ReferencePotentialSensor"
+  } ]
+}, {
+  "@id" : "http://lov.linkeddata.es/dataset/lov/vocabs/bmon/LimitRange",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "http://lov.linkeddata.es/dataset/lov/vocabs/bmon/LocationInEntity",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Specifies the location as an offset in the local coordinates of an entity"
+  } ]
+}, {
+  "@id" : "http://lov.linkeddata.es/dataset/lov/vocabs/bmon/Max",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://lov.linkeddata.es/dataset/lov/vocabs/bmon/HistoryFunctionType"
+  } ]
+}, {
+  "@id" : "http://lov.linkeddata.es/dataset/lov/vocabs/bmon/Min",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://lov.linkeddata.es/dataset/lov/vocabs/bmon/HistoryFunctionType"
+  } ]
+}, {
+  "@id" : "http://lov.linkeddata.es/dataset/lov/vocabs/bmon/MonitoringDeployment",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.w3.org/ns/ssn/Deployment"
+  } ]
+}, {
+  "@id" : "http://lov.linkeddata.es/dataset/lov/vocabs/bmon/RainAccumulation",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.w3.org/ns/sosa/ObservableProperty"
+  } ]
+}, {
+  "@id" : "http://lov.linkeddata.es/dataset/lov/vocabs/bmon/RainAccumulationSensor",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://lov.linkeddata.es/dataset/lov/vocabs/bmon/WeatherSensor"
+  }, {
+    "@id" : "_:genid8"
+  } ]
+}, {
+  "@id" : "http://lov.linkeddata.es/dataset/lov/vocabs/bmon/RainDuration",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.w3.org/ns/sosa/ObservableProperty"
+  } ]
+}, {
+  "@id" : "http://lov.linkeddata.es/dataset/lov/vocabs/bmon/RainDurationSensor",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://lov.linkeddata.es/dataset/lov/vocabs/bmon/WeatherSensor"
+  }, {
+    "@id" : "_:genid9"
+  } ]
+}, {
+  "@id" : "http://lov.linkeddata.es/dataset/lov/vocabs/bmon/RainIntensity",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.w3.org/ns/sosa/ObservableProperty"
+  } ]
+}, {
+  "@id" : "http://lov.linkeddata.es/dataset/lov/vocabs/bmon/RainIntensitySensor",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://lov.linkeddata.es/dataset/lov/vocabs/bmon/WeatherSensor"
+  }, {
+    "@id" : "_:genid10"
+  } ]
+}, {
+  "@id" : "http://lov.linkeddata.es/dataset/lov/vocabs/bmon/ReferencePotentialSensor",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://lov.linkeddata.es/dataset/lov/vocabs/bmon/CorrosionSensor"
+  } ]
+}, {
+  "@id" : "http://lov.linkeddata.es/dataset/lov/vocabs/bmon/RelativeHumidity",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.w3.org/ns/sosa/ObservableProperty"
+  } ]
+}, {
+  "@id" : "http://lov.linkeddata.es/dataset/lov/vocabs/bmon/RelativeHumiditySensor",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://lov.linkeddata.es/dataset/lov/vocabs/bmon/WeatherSensor"
+  }, {
+    "@id" : "_:genid11"
+  } ]
+}, {
+  "@id" : "http://lov.linkeddata.es/dataset/lov/vocabs/bmon/SensorSegment",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.w3.org/ns/ssn/System"
+  } ]
+}, {
+  "@id" : "http://lov.linkeddata.es/dataset/lov/vocabs/bmon/Strain",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.w3.org/ns/sosa/ObservableProperty"
+  } ]
+}, {
+  "@id" : "http://lov.linkeddata.es/dataset/lov/vocabs/bmon/StrainGauge",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://lov.linkeddata.es/dataset/lov/vocabs/bmon/StructureSensor"
+  }, {
+    "@id" : "_:genid12"
+  } ]
+}, {
+  "@id" : "http://lov.linkeddata.es/dataset/lov/vocabs/bmon/StructureSensor",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://lov.linkeddata.es/dataset/lov/vocabs/bmon/EntitySensor"
+  } ]
+}, {
+  "@id" : "http://lov.linkeddata.es/dataset/lov/vocabs/bmon/Temperature",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.w3.org/ns/sosa/ObservableProperty"
+  } ]
+}, {
+  "@id" : "http://lov.linkeddata.es/dataset/lov/vocabs/bmon/TemperatureSensor",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://lov.linkeddata.es/dataset/lov/vocabs/bmon/EntitySensor"
+  }, {
+    "@id" : "_:genid13"
+  } ]
+}, {
+  "@id" : "http://lov.linkeddata.es/dataset/lov/vocabs/bmon/Trend",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://lov.linkeddata.es/dataset/lov/vocabs/bmon/HistoryFunctionType"
+  } ]
+}, {
+  "@id" : "http://lov.linkeddata.es/dataset/lov/vocabs/bmon/ValueHistory",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "History of values"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.w3.org/ns/sosa/Sample"
+  } ]
+}, {
+  "@id" : "http://lov.linkeddata.es/dataset/lov/vocabs/bmon/WarningRange",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Value outside of normal range"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://lov.linkeddata.es/dataset/lov/vocabs/bmon/LimitRange"
+  } ]
+}, {
+  "@id" : "http://lov.linkeddata.es/dataset/lov/vocabs/bmon/WeatherSensor",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://lov.linkeddata.es/dataset/lov/vocabs/bmon/EntitySensor"
+  } ]
+}, {
+  "@id" : "http://lov.linkeddata.es/dataset/lov/vocabs/bmon/WeatherStation",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.w3.org/ns/ssn/System"
+  } ]
+}, {
+  "@id" : "http://lov.linkeddata.es/dataset/lov/vocabs/bmon/WindDirection",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.w3.org/ns/sosa/ObservableProperty"
+  } ]
+}, {
+  "@id" : "http://lov.linkeddata.es/dataset/lov/vocabs/bmon/WindDirectionSensor",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://lov.linkeddata.es/dataset/lov/vocabs/bmon/WeatherSensor"
+  }, {
+    "@id" : "_:genid14"
+  } ]
+}, {
+  "@id" : "http://lov.linkeddata.es/dataset/lov/vocabs/bmon/WindSpeed",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.w3.org/ns/sosa/ObservableProperty"
+  } ]
+}, {
+  "@id" : "http://lov.linkeddata.es/dataset/lov/vocabs/bmon/WindSpeedSensor",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://lov.linkeddata.es/dataset/lov/vocabs/bmon/WeatherSensor"
+  }, {
+    "@id" : "_:genid15"
+  } ]
+}, {
+  "@id" : "http://lov.linkeddata.es/dataset/lov/vocabs/bmon/callAddress",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty", "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.w3.org/2002/07/owl#Property" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Address of a call"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://lov.linkeddata.es/dataset/lov/vocabs/bmon/DataRequest"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#String"
+  } ]
+}, {
+  "@id" : "http://lov.linkeddata.es/dataset/lov/vocabs/bmon/channel",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty", "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.w3.org/2002/07/owl#Property" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://lov.linkeddata.es/dataset/lov/vocabs/bmon/MonitoringDeployment"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://lov.linkeddata.es/dataset/lov/vocabs/bmon/EntitySensor"
+  } ]
+}, {
+  "@id" : "http://lov.linkeddata.es/dataset/lov/vocabs/bmon/dataInterface",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty", "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.w3.org/2002/07/owl#Property" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://lov.linkeddata.es/dataset/lov/vocabs/bmon/MonitoringDeployment"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://lov.linkeddata.es/dataset/lov/vocabs/bmon/DataRequest"
+  } ]
+}, {
+  "@id" : "http://lov.linkeddata.es/dataset/lov/vocabs/bmon/hasAccelerationX",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty", "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.w3.org/2002/07/owl#Property" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://lov.linkeddata.es/dataset/lov/vocabs/bmon/AccelerationSensor"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://lov.linkeddata.es/dataset/lov/vocabs/bmon/AccelerationSensor"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://www.w3.org/ns/ssn/hasSubSystem"
+  } ]
+}, {
+  "@id" : "http://lov.linkeddata.es/dataset/lov/vocabs/bmon/hasAccelerationY",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty", "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.w3.org/2002/07/owl#Property" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://lov.linkeddata.es/dataset/lov/vocabs/bmon/AccelerationSensor"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://lov.linkeddata.es/dataset/lov/vocabs/bmon/AccelerationSensor"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://www.w3.org/ns/ssn/hasSubSystem"
+  } ]
+}, {
+  "@id" : "http://lov.linkeddata.es/dataset/lov/vocabs/bmon/hasAccelerationZ",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty", "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.w3.org/2002/07/owl#Property" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://lov.linkeddata.es/dataset/lov/vocabs/bmon/AccelerationSensor"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://lov.linkeddata.es/dataset/lov/vocabs/bmon/AccelerationSensor"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://www.w3.org/ns/ssn/hasSubSystem"
+  } ]
+}, {
+  "@id" : "http://lov.linkeddata.es/dataset/lov/vocabs/bmon/hasBasicAcceleration",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty", "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.w3.org/2002/07/owl#Property" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://lov.linkeddata.es/dataset/lov/vocabs/bmon/AccelerationSensor"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://lov.linkeddata.es/dataset/lov/vocabs/bmon/AccelerationSensor"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://www.w3.org/ns/ssn/hasSubSystem"
+  } ]
+}, {
+  "@id" : "http://lov.linkeddata.es/dataset/lov/vocabs/bmon/hasCompassAcceleration",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty", "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.w3.org/2002/07/owl#Property" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://lov.linkeddata.es/dataset/lov/vocabs/bmon/AccelerationSensor"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://lov.linkeddata.es/dataset/lov/vocabs/bmon/AccelerationSensor"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://www.w3.org/ns/ssn/hasSubSystem"
+  } ]
+}, {
+  "@id" : "http://lov.linkeddata.es/dataset/lov/vocabs/bmon/hasCompensatinTemperature",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ]
+}, {
+  "@id" : "http://lov.linkeddata.es/dataset/lov/vocabs/bmon/hasCompensatingTemperature",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty", "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.w3.org/2002/07/owl#Property" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://lov.linkeddata.es/dataset/lov/vocabs/bmon/FiberStrainTemperatureCompensated"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://lov.linkeddata.es/dataset/lov/vocabs/bmon/TemperatureSensor"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://www.w3.org/ns/ssn/hasSubSystem"
+  } ]
+}, {
+  "@id" : "http://lov.linkeddata.es/dataset/lov/vocabs/bmon/hasFiberStrain",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty", "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.w3.org/2002/07/owl#Property" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://lov.linkeddata.es/dataset/lov/vocabs/bmon/FiberStrainTemperatureCompensated"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://lov.linkeddata.es/dataset/lov/vocabs/bmon/FiberStrain"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://www.w3.org/ns/ssn/hasSubSystem"
+  } ]
+}, {
+  "@id" : "http://lov.linkeddata.es/dataset/lov/vocabs/bmon/hasGyroscopicAcceleration",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty", "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.w3.org/2002/07/owl#Property" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://lov.linkeddata.es/dataset/lov/vocabs/bmon/AccelerationSensor"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://lov.linkeddata.es/dataset/lov/vocabs/bmon/AccelerationSensor"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://www.w3.org/ns/ssn/hasSubSystem"
+  } ]
+}, {
+  "@id" : "http://lov.linkeddata.es/dataset/lov/vocabs/bmon/httpApiKey",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty", "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.w3.org/2002/07/owl#Property" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Association of an api key to a call"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://lov.linkeddata.es/dataset/lov/vocabs/bmon/HttpRequest"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#String"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://lov.linkeddata.es/dataset/lov/vocabs/bmon/httpHeader"
+  } ]
+}, {
+  "@id" : "http://lov.linkeddata.es/dataset/lov/vocabs/bmon/httpHeader",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty", "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.w3.org/2002/07/owl#Property" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Association of a header to a call"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://lov.linkeddata.es/dataset/lov/vocabs/bmon/HttpRequest"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#String"
+  } ]
+}, {
+  "@id" : "http://lov.linkeddata.es/dataset/lov/vocabs/bmon/httpMethod",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty", "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.w3.org/2002/07/owl#Property" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Method used in a REST call"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://lov.linkeddata.es/dataset/lov/vocabs/bmon/DataRequest"
+  } ]
+}, {
+  "@id" : "http://lov.linkeddata.es/dataset/lov/vocabs/bmon/httpRequestBody",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty", "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.w3.org/2002/07/owl#Property" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Association of a body to a call"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://lov.linkeddata.es/dataset/lov/vocabs/bmon/HttpRequest"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#String"
+  } ]
+}, {
+  "@id" : "http://lov.linkeddata.es/dataset/lov/vocabs/bmon/limitLabel",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty", "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.w3.org/2002/07/owl#Property" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://lov.linkeddata.es/dataset/lov/vocabs/bmon/LimitRange"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#string"
+  } ]
+}, {
+  "@id" : "http://lov.linkeddata.es/dataset/lov/vocabs/bmon/limits",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty", "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.w3.org/2002/07/owl#Property" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://lov.linkeddata.es/dataset/lov/vocabs/bmon/EntitySensor"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://lov.linkeddata.es/dataset/lov/vocabs/bmon/LimitRange"
+  } ]
+}, {
+  "@id" : "http://lov.linkeddata.es/dataset/lov/vocabs/bmon/locatedAt",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty", "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.w3.org/2002/07/owl#Property" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://lov.linkeddata.es/dataset/lov/vocabs/bmon/EntitySensor"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://lov.linkeddata.es/dataset/lov/vocabs/bmon/LocationInEntity"
+  } ]
+}, {
+  "@id" : "http://lov.linkeddata.es/dataset/lov/vocabs/bmon/locationEntity",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty", "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.w3.org/2002/07/owl#Property" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://lov.linkeddata.es/dataset/lov/vocabs/bmon/LocationInEntity"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://lov.linkeddata.es/dataset/lov/vocabs/bmon/Entity"
+  } ]
+}, {
+  "@id" : "http://lov.linkeddata.es/dataset/lov/vocabs/bmon/maxLimit",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty", "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.w3.org/2002/07/owl#Property" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://lov.linkeddata.es/dataset/lov/vocabs/bmon/LimitRange"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#double"
+  } ]
+}, {
+  "@id" : "http://lov.linkeddata.es/dataset/lov/vocabs/bmon/minLimit",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty", "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.w3.org/2002/07/owl#Property" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://lov.linkeddata.es/dataset/lov/vocabs/bmon/LimitRange"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#double"
+  } ]
+}, {
+  "@id" : "http://lov.linkeddata.es/dataset/lov/vocabs/bmon/observedEntity",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty", "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.w3.org/2002/07/owl#Property" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://lov.linkeddata.es/dataset/lov/vocabs/bmon/EntitySensor"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://lov.linkeddata.es/dataset/lov/vocabs/bmon/Entity"
+  } ]
+}, {
+  "@id" : "http://lov.linkeddata.es/dataset/lov/vocabs/bmon/offsetX",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty", "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.w3.org/2002/07/owl#Property" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://lov.linkeddata.es/dataset/lov/vocabs/bmon/LocationInEntity"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#double"
+  } ]
+}, {
+  "@id" : "http://lov.linkeddata.es/dataset/lov/vocabs/bmon/offsetY",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty", "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.w3.org/2002/07/owl#Property" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://lov.linkeddata.es/dataset/lov/vocabs/bmon/LocationInEntity"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#double"
+  } ]
+}, {
+  "@id" : "http://lov.linkeddata.es/dataset/lov/vocabs/bmon/offsetZ",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty", "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.w3.org/2002/07/owl#Property" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://lov.linkeddata.es/dataset/lov/vocabs/bmon/LocationInEntity"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#double"
+  } ]
+}, {
+  "@id" : "http://lov.linkeddata.es/dataset/lov/vocabs/bmon/segment",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty", "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.w3.org/2002/07/owl#Property" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://lov.linkeddata.es/dataset/lov/vocabs/bmon/MonitoringDeployment"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://lov.linkeddata.es/dataset/lov/vocabs/bmon/SensorSegment"
+  } ]
+}, {
+  "@id" : "http://lov.linkeddata.es/dataset/lov/vocabs/bmon/unit",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty", "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.w3.org/2002/07/owl#Property" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://lov.linkeddata.es/dataset/lov/vocabs/bmon/EntitySensor"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#String"
+  } ]
+}, {
+  "@id" : "http://lov.linkeddata.es/dataset/lov/vocabs/bmon/userInterfaceAddress",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty", "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.w3.org/2002/07/owl#Property" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://lov.linkeddata.es/dataset/lov/vocabs/bmon/MonitoringDeployment"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#anyURI"
+  } ]
+}, {
+  "@id" : "http://lov.linkeddata.es/dataset/lov/vocabs/bmon/valueFunction",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty", "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.w3.org/2002/07/owl#Property" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://lov.linkeddata.es/dataset/lov/vocabs/bmon/ValueHistory"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://lov.linkeddata.es/dataset/lov/vocabs/bmon/HistoryFunctionType"
+  } ]
+}, {
+  "@id" : "http://lov.linkeddata.es/dataset/lov/vocabs/bmon/valuesCount",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty", "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.w3.org/2002/07/owl#Property" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://lov.linkeddata.es/dataset/lov/vocabs/bmon/ValueHistory"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#Number"
+  } ]
+}, {
+  "@id" : "http://lov.linkeddata.es/dataset/lov/vocabs/bmon/valuesFrom",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty", "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.w3.org/2002/07/owl#Property" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://lov.linkeddata.es/dataset/lov/vocabs/bmon/ValueHistory"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#DateTime"
+  } ]
+}, {
+  "@id" : "http://lov.linkeddata.es/dataset/lov/vocabs/bmon/valuesStep",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty", "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.w3.org/2002/07/owl#Property" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://lov.linkeddata.es/dataset/lov/vocabs/bmon/ValueHistory"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#Duration"
+  } ]
+}, {
+  "@id" : "http://lov.linkeddata.es/dataset/lov/vocabs/bmon/valuesTo",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty", "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.w3.org/2002/07/owl#Property" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://lov.linkeddata.es/dataset/lov/vocabs/bmon/ValueHistory"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#DateTime"
+  } ]
+}, {
+  "@id" : "http://www.w3.org/2001/XMLSchema#DateTime",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "http://www.w3.org/2001/XMLSchema#Duration",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "http://www.w3.org/2001/XMLSchema#Number",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "http://www.w3.org/2001/XMLSchema#String",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "http://www.w3.org/2002/07/owl#Property",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+} ]
