@@ -1,0 +1,658 @@
+<http://lov.linkeddata.es/dataset/lov/vocabs/bmon/> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Ontology> .
+<http://lov.linkeddata.es/dataset/lov/vocabs/bmon/> <http://www.w3.org/2002/07/owl#imports> <http://www.w3.org/ns/sosa/> .
+<http://lov.linkeddata.es/dataset/lov/vocabs/bmon/> <http://www.w3.org/2002/07/owl#imports> <http://www.w3.org/ns/ssn/> .
+<http://lov.linkeddata.es/dataset/lov/vocabs/bmon/> <http://purl.org/dc/terms/created> "2018-08-31"^^<http://www.w3.org/2001/XMLSchema#date> .
+<http://lov.linkeddata.es/dataset/lov/vocabs/bmon/> <http://purl.org/dc/terms/creator> _:genid1 .
+_:genid1 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://xmlns.com/foaf/0.1/Agent> .
+_:genid1 <http://xmlns.com/foaf/0.1/name> "SmartBridgeFM project"@en .
+<http://lov.linkeddata.es/dataset/lov/vocabs/bmon/> <http://purl.org/dc/terms/description> "Ontology for bridge monitoring that extends SSN/SOSA with bridge specific concepts."@en .
+<http://lov.linkeddata.es/dataset/lov/vocabs/bmon/> <http://purl.org/dc/terms/license> <http://www.opengeospatial.org/ogc/Software> .
+<http://lov.linkeddata.es/dataset/lov/vocabs/bmon/> <http://purl.org/dc/terms/license> <http://www.w3.org/Consortium/Legal/2015/copyright-software-and-document> .
+<http://lov.linkeddata.es/dataset/lov/vocabs/bmon/> <http://purl.org/dc/terms/title> "Bridge Monitoring Ontology"@en .
+<http://lov.linkeddata.es/dataset/lov/vocabs/bmon/> <http://purl.org/vocab/vann/preferredNamespacePrefix> "bmon" .
+<http://lov.linkeddata.es/dataset/lov/vocabs/bmon/> <http://purl.org/vocab/vann/preferredNamespaceUri> "https://smartbridgefm.github.io/bmon/" .
+# 
+# 
+# #################################################################
+# #
+# #    Annotation properties
+# #
+# #################################################################
+# 
+# 
+# http://lov.linkeddata.es/dataset/lov/vocabs/bmon/httpMethod
+<http://lov.linkeddata.es/dataset/lov/vocabs/bmon/httpMethod> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+<http://lov.linkeddata.es/dataset/lov/vocabs/bmon/httpMethod> <http://www.w3.org/2000/01/rdf-schema#domain> <http://lov.linkeddata.es/dataset/lov/vocabs/bmon/DataRequest> .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Object Properties
+# #
+# #################################################################
+# 
+# 
+# http://lov.linkeddata.es/dataset/lov/vocabs/bmon/callAddress
+<http://lov.linkeddata.es/dataset/lov/vocabs/bmon/callAddress> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://lov.linkeddata.es/dataset/lov/vocabs/bmon/callAddress> <http://www.w3.org/2000/01/rdf-schema#domain> <http://lov.linkeddata.es/dataset/lov/vocabs/bmon/DataRequest> .
+<http://lov.linkeddata.es/dataset/lov/vocabs/bmon/callAddress> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#String> .
+<http://www.w3.org/2001/XMLSchema#String> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# http://lov.linkeddata.es/dataset/lov/vocabs/bmon/channel
+<http://lov.linkeddata.es/dataset/lov/vocabs/bmon/channel> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://lov.linkeddata.es/dataset/lov/vocabs/bmon/channel> <http://www.w3.org/2000/01/rdf-schema#domain> <http://lov.linkeddata.es/dataset/lov/vocabs/bmon/MonitoringDeployment> .
+<http://lov.linkeddata.es/dataset/lov/vocabs/bmon/channel> <http://www.w3.org/2000/01/rdf-schema#range> <http://lov.linkeddata.es/dataset/lov/vocabs/bmon/EntitySensor> .
+# 
+# http://lov.linkeddata.es/dataset/lov/vocabs/bmon/dataInterface
+<http://lov.linkeddata.es/dataset/lov/vocabs/bmon/dataInterface> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://lov.linkeddata.es/dataset/lov/vocabs/bmon/dataInterface> <http://www.w3.org/2000/01/rdf-schema#domain> <http://lov.linkeddata.es/dataset/lov/vocabs/bmon/MonitoringDeployment> .
+<http://lov.linkeddata.es/dataset/lov/vocabs/bmon/dataInterface> <http://www.w3.org/2000/01/rdf-schema#range> <http://lov.linkeddata.es/dataset/lov/vocabs/bmon/DataRequest> .
+# 
+# http://lov.linkeddata.es/dataset/lov/vocabs/bmon/hasAccelerationX
+<http://lov.linkeddata.es/dataset/lov/vocabs/bmon/hasAccelerationX> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://lov.linkeddata.es/dataset/lov/vocabs/bmon/hasAccelerationX> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/ns/ssn/hasSubSystem> .
+<http://lov.linkeddata.es/dataset/lov/vocabs/bmon/hasAccelerationX> <http://www.w3.org/2000/01/rdf-schema#domain> <http://lov.linkeddata.es/dataset/lov/vocabs/bmon/AccelerationSensor> .
+<http://lov.linkeddata.es/dataset/lov/vocabs/bmon/hasAccelerationX> <http://www.w3.org/2000/01/rdf-schema#range> <http://lov.linkeddata.es/dataset/lov/vocabs/bmon/AccelerationSensor> .
+# 
+# http://lov.linkeddata.es/dataset/lov/vocabs/bmon/hasAccelerationY
+<http://lov.linkeddata.es/dataset/lov/vocabs/bmon/hasAccelerationY> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://lov.linkeddata.es/dataset/lov/vocabs/bmon/hasAccelerationY> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/ns/ssn/hasSubSystem> .
+<http://lov.linkeddata.es/dataset/lov/vocabs/bmon/hasAccelerationY> <http://www.w3.org/2000/01/rdf-schema#domain> <http://lov.linkeddata.es/dataset/lov/vocabs/bmon/AccelerationSensor> .
+<http://lov.linkeddata.es/dataset/lov/vocabs/bmon/hasAccelerationY> <http://www.w3.org/2000/01/rdf-schema#range> <http://lov.linkeddata.es/dataset/lov/vocabs/bmon/AccelerationSensor> .
+# 
+# http://lov.linkeddata.es/dataset/lov/vocabs/bmon/hasAccelerationZ
+<http://lov.linkeddata.es/dataset/lov/vocabs/bmon/hasAccelerationZ> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://lov.linkeddata.es/dataset/lov/vocabs/bmon/hasAccelerationZ> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/ns/ssn/hasSubSystem> .
+<http://lov.linkeddata.es/dataset/lov/vocabs/bmon/hasAccelerationZ> <http://www.w3.org/2000/01/rdf-schema#domain> <http://lov.linkeddata.es/dataset/lov/vocabs/bmon/AccelerationSensor> .
+<http://lov.linkeddata.es/dataset/lov/vocabs/bmon/hasAccelerationZ> <http://www.w3.org/2000/01/rdf-schema#range> <http://lov.linkeddata.es/dataset/lov/vocabs/bmon/AccelerationSensor> .
+# 
+# http://lov.linkeddata.es/dataset/lov/vocabs/bmon/hasBasicAcceleration
+<http://lov.linkeddata.es/dataset/lov/vocabs/bmon/hasBasicAcceleration> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://lov.linkeddata.es/dataset/lov/vocabs/bmon/hasBasicAcceleration> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/ns/ssn/hasSubSystem> .
+<http://lov.linkeddata.es/dataset/lov/vocabs/bmon/hasBasicAcceleration> <http://www.w3.org/2000/01/rdf-schema#domain> <http://lov.linkeddata.es/dataset/lov/vocabs/bmon/AccelerationSensor> .
+<http://lov.linkeddata.es/dataset/lov/vocabs/bmon/hasBasicAcceleration> <http://www.w3.org/2000/01/rdf-schema#range> <http://lov.linkeddata.es/dataset/lov/vocabs/bmon/AccelerationSensor> .
+# 
+# http://lov.linkeddata.es/dataset/lov/vocabs/bmon/hasCompassAcceleration
+<http://lov.linkeddata.es/dataset/lov/vocabs/bmon/hasCompassAcceleration> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://lov.linkeddata.es/dataset/lov/vocabs/bmon/hasCompassAcceleration> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/ns/ssn/hasSubSystem> .
+<http://lov.linkeddata.es/dataset/lov/vocabs/bmon/hasCompassAcceleration> <http://www.w3.org/2000/01/rdf-schema#domain> <http://lov.linkeddata.es/dataset/lov/vocabs/bmon/AccelerationSensor> .
+<http://lov.linkeddata.es/dataset/lov/vocabs/bmon/hasCompassAcceleration> <http://www.w3.org/2000/01/rdf-schema#range> <http://lov.linkeddata.es/dataset/lov/vocabs/bmon/AccelerationSensor> .
+# 
+# http://lov.linkeddata.es/dataset/lov/vocabs/bmon/hasCompensatinTemperature
+<http://lov.linkeddata.es/dataset/lov/vocabs/bmon/hasCompensatinTemperature> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+# 
+# http://lov.linkeddata.es/dataset/lov/vocabs/bmon/hasCompensatingTemperature
+<http://lov.linkeddata.es/dataset/lov/vocabs/bmon/hasCompensatingTemperature> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://lov.linkeddata.es/dataset/lov/vocabs/bmon/hasCompensatingTemperature> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/ns/ssn/hasSubSystem> .
+<http://lov.linkeddata.es/dataset/lov/vocabs/bmon/hasCompensatingTemperature> <http://www.w3.org/2000/01/rdf-schema#domain> <http://lov.linkeddata.es/dataset/lov/vocabs/bmon/FiberStrainTemperatureCompensated> .
+<http://lov.linkeddata.es/dataset/lov/vocabs/bmon/hasCompensatingTemperature> <http://www.w3.org/2000/01/rdf-schema#range> <http://lov.linkeddata.es/dataset/lov/vocabs/bmon/TemperatureSensor> .
+# 
+# http://lov.linkeddata.es/dataset/lov/vocabs/bmon/hasFiberStrain
+<http://lov.linkeddata.es/dataset/lov/vocabs/bmon/hasFiberStrain> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://lov.linkeddata.es/dataset/lov/vocabs/bmon/hasFiberStrain> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/ns/ssn/hasSubSystem> .
+<http://lov.linkeddata.es/dataset/lov/vocabs/bmon/hasFiberStrain> <http://www.w3.org/2000/01/rdf-schema#domain> <http://lov.linkeddata.es/dataset/lov/vocabs/bmon/FiberStrainTemperatureCompensated> .
+<http://lov.linkeddata.es/dataset/lov/vocabs/bmon/hasFiberStrain> <http://www.w3.org/2000/01/rdf-schema#range> <http://lov.linkeddata.es/dataset/lov/vocabs/bmon/FiberStrain> .
+# 
+# http://lov.linkeddata.es/dataset/lov/vocabs/bmon/hasGyroscopicAcceleration
+<http://lov.linkeddata.es/dataset/lov/vocabs/bmon/hasGyroscopicAcceleration> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://lov.linkeddata.es/dataset/lov/vocabs/bmon/hasGyroscopicAcceleration> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/ns/ssn/hasSubSystem> .
+<http://lov.linkeddata.es/dataset/lov/vocabs/bmon/hasGyroscopicAcceleration> <http://www.w3.org/2000/01/rdf-schema#domain> <http://lov.linkeddata.es/dataset/lov/vocabs/bmon/AccelerationSensor> .
+<http://lov.linkeddata.es/dataset/lov/vocabs/bmon/hasGyroscopicAcceleration> <http://www.w3.org/2000/01/rdf-schema#range> <http://lov.linkeddata.es/dataset/lov/vocabs/bmon/AccelerationSensor> .
+# 
+# http://lov.linkeddata.es/dataset/lov/vocabs/bmon/httpApiKey
+<http://lov.linkeddata.es/dataset/lov/vocabs/bmon/httpApiKey> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://lov.linkeddata.es/dataset/lov/vocabs/bmon/httpApiKey> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://lov.linkeddata.es/dataset/lov/vocabs/bmon/httpHeader> .
+<http://lov.linkeddata.es/dataset/lov/vocabs/bmon/httpHeader> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://lov.linkeddata.es/dataset/lov/vocabs/bmon/httpApiKey> <http://www.w3.org/2000/01/rdf-schema#domain> <http://lov.linkeddata.es/dataset/lov/vocabs/bmon/HttpRequest> .
+<http://lov.linkeddata.es/dataset/lov/vocabs/bmon/httpApiKey> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#String> .
+# 
+# http://lov.linkeddata.es/dataset/lov/vocabs/bmon/httpHeader
+<http://lov.linkeddata.es/dataset/lov/vocabs/bmon/httpHeader> <http://www.w3.org/2000/01/rdf-schema#domain> <http://lov.linkeddata.es/dataset/lov/vocabs/bmon/HttpRequest> .
+<http://lov.linkeddata.es/dataset/lov/vocabs/bmon/httpHeader> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#String> .
+# 
+# http://lov.linkeddata.es/dataset/lov/vocabs/bmon/httpRequestBody
+<http://lov.linkeddata.es/dataset/lov/vocabs/bmon/httpRequestBody> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://lov.linkeddata.es/dataset/lov/vocabs/bmon/httpRequestBody> <http://www.w3.org/2000/01/rdf-schema#domain> <http://lov.linkeddata.es/dataset/lov/vocabs/bmon/HttpRequest> .
+<http://lov.linkeddata.es/dataset/lov/vocabs/bmon/httpRequestBody> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#String> .
+# 
+# http://lov.linkeddata.es/dataset/lov/vocabs/bmon/limits
+<http://lov.linkeddata.es/dataset/lov/vocabs/bmon/limits> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://lov.linkeddata.es/dataset/lov/vocabs/bmon/limits> <http://www.w3.org/2000/01/rdf-schema#domain> <http://lov.linkeddata.es/dataset/lov/vocabs/bmon/EntitySensor> .
+<http://lov.linkeddata.es/dataset/lov/vocabs/bmon/limits> <http://www.w3.org/2000/01/rdf-schema#range> <http://lov.linkeddata.es/dataset/lov/vocabs/bmon/LimitRange> .
+# 
+# http://lov.linkeddata.es/dataset/lov/vocabs/bmon/locatedAt
+<http://lov.linkeddata.es/dataset/lov/vocabs/bmon/locatedAt> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://lov.linkeddata.es/dataset/lov/vocabs/bmon/locatedAt> <http://www.w3.org/2000/01/rdf-schema#domain> <http://lov.linkeddata.es/dataset/lov/vocabs/bmon/EntitySensor> .
+<http://lov.linkeddata.es/dataset/lov/vocabs/bmon/locatedAt> <http://www.w3.org/2000/01/rdf-schema#range> <http://lov.linkeddata.es/dataset/lov/vocabs/bmon/LocationInEntity> .
+# 
+# http://lov.linkeddata.es/dataset/lov/vocabs/bmon/locationEntity
+<http://lov.linkeddata.es/dataset/lov/vocabs/bmon/locationEntity> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://lov.linkeddata.es/dataset/lov/vocabs/bmon/locationEntity> <http://www.w3.org/2000/01/rdf-schema#domain> <http://lov.linkeddata.es/dataset/lov/vocabs/bmon/LocationInEntity> .
+<http://lov.linkeddata.es/dataset/lov/vocabs/bmon/locationEntity> <http://www.w3.org/2000/01/rdf-schema#range> <http://lov.linkeddata.es/dataset/lov/vocabs/bmon/Entity> .
+# 
+# http://lov.linkeddata.es/dataset/lov/vocabs/bmon/observedEntity
+<http://lov.linkeddata.es/dataset/lov/vocabs/bmon/observedEntity> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://lov.linkeddata.es/dataset/lov/vocabs/bmon/observedEntity> <http://www.w3.org/2000/01/rdf-schema#domain> <http://lov.linkeddata.es/dataset/lov/vocabs/bmon/EntitySensor> .
+<http://lov.linkeddata.es/dataset/lov/vocabs/bmon/observedEntity> <http://www.w3.org/2000/01/rdf-schema#range> <http://lov.linkeddata.es/dataset/lov/vocabs/bmon/Entity> .
+# 
+# http://lov.linkeddata.es/dataset/lov/vocabs/bmon/segment
+<http://lov.linkeddata.es/dataset/lov/vocabs/bmon/segment> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://lov.linkeddata.es/dataset/lov/vocabs/bmon/segment> <http://www.w3.org/2000/01/rdf-schema#domain> <http://lov.linkeddata.es/dataset/lov/vocabs/bmon/MonitoringDeployment> .
+<http://lov.linkeddata.es/dataset/lov/vocabs/bmon/segment> <http://www.w3.org/2000/01/rdf-schema#range> <http://lov.linkeddata.es/dataset/lov/vocabs/bmon/SensorSegment> .
+# 
+# http://lov.linkeddata.es/dataset/lov/vocabs/bmon/unit
+<http://lov.linkeddata.es/dataset/lov/vocabs/bmon/unit> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://lov.linkeddata.es/dataset/lov/vocabs/bmon/unit> <http://www.w3.org/2000/01/rdf-schema#domain> <http://lov.linkeddata.es/dataset/lov/vocabs/bmon/EntitySensor> .
+<http://lov.linkeddata.es/dataset/lov/vocabs/bmon/unit> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#String> .
+# 
+# http://lov.linkeddata.es/dataset/lov/vocabs/bmon/valueFunction
+<http://lov.linkeddata.es/dataset/lov/vocabs/bmon/valueFunction> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://lov.linkeddata.es/dataset/lov/vocabs/bmon/valueFunction> <http://www.w3.org/2000/01/rdf-schema#domain> <http://lov.linkeddata.es/dataset/lov/vocabs/bmon/ValueHistory> .
+<http://lov.linkeddata.es/dataset/lov/vocabs/bmon/valueFunction> <http://www.w3.org/2000/01/rdf-schema#range> <http://lov.linkeddata.es/dataset/lov/vocabs/bmon/HistoryFunctionType> .
+# 
+# http://lov.linkeddata.es/dataset/lov/vocabs/bmon/valuesCount
+<http://lov.linkeddata.es/dataset/lov/vocabs/bmon/valuesCount> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://lov.linkeddata.es/dataset/lov/vocabs/bmon/valuesCount> <http://www.w3.org/2000/01/rdf-schema#domain> <http://lov.linkeddata.es/dataset/lov/vocabs/bmon/ValueHistory> .
+<http://lov.linkeddata.es/dataset/lov/vocabs/bmon/valuesCount> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#Number> .
+<http://www.w3.org/2001/XMLSchema#Number> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# http://lov.linkeddata.es/dataset/lov/vocabs/bmon/valuesFrom
+<http://lov.linkeddata.es/dataset/lov/vocabs/bmon/valuesFrom> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://lov.linkeddata.es/dataset/lov/vocabs/bmon/valuesFrom> <http://www.w3.org/2000/01/rdf-schema#domain> <http://lov.linkeddata.es/dataset/lov/vocabs/bmon/ValueHistory> .
+<http://lov.linkeddata.es/dataset/lov/vocabs/bmon/valuesFrom> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#DateTime> .
+<http://www.w3.org/2001/XMLSchema#DateTime> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# http://lov.linkeddata.es/dataset/lov/vocabs/bmon/valuesStep
+<http://lov.linkeddata.es/dataset/lov/vocabs/bmon/valuesStep> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://lov.linkeddata.es/dataset/lov/vocabs/bmon/valuesStep> <http://www.w3.org/2000/01/rdf-schema#domain> <http://lov.linkeddata.es/dataset/lov/vocabs/bmon/ValueHistory> .
+<http://lov.linkeddata.es/dataset/lov/vocabs/bmon/valuesStep> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#Duration> .
+<http://www.w3.org/2001/XMLSchema#Duration> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# http://lov.linkeddata.es/dataset/lov/vocabs/bmon/valuesTo
+<http://lov.linkeddata.es/dataset/lov/vocabs/bmon/valuesTo> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://lov.linkeddata.es/dataset/lov/vocabs/bmon/valuesTo> <http://www.w3.org/2000/01/rdf-schema#domain> <http://lov.linkeddata.es/dataset/lov/vocabs/bmon/ValueHistory> .
+<http://lov.linkeddata.es/dataset/lov/vocabs/bmon/valuesTo> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#DateTime> .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Data properties
+# #
+# #################################################################
+# 
+# 
+# http://lov.linkeddata.es/dataset/lov/vocabs/bmon/limitLabel
+<http://lov.linkeddata.es/dataset/lov/vocabs/bmon/limitLabel> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://lov.linkeddata.es/dataset/lov/vocabs/bmon/limitLabel> <http://www.w3.org/2000/01/rdf-schema#domain> <http://lov.linkeddata.es/dataset/lov/vocabs/bmon/LimitRange> .
+<http://lov.linkeddata.es/dataset/lov/vocabs/bmon/limitLabel> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+# 
+# http://lov.linkeddata.es/dataset/lov/vocabs/bmon/maxLimit
+<http://lov.linkeddata.es/dataset/lov/vocabs/bmon/maxLimit> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://lov.linkeddata.es/dataset/lov/vocabs/bmon/maxLimit> <http://www.w3.org/2000/01/rdf-schema#domain> <http://lov.linkeddata.es/dataset/lov/vocabs/bmon/LimitRange> .
+<http://lov.linkeddata.es/dataset/lov/vocabs/bmon/maxLimit> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#double> .
+# 
+# http://lov.linkeddata.es/dataset/lov/vocabs/bmon/minLimit
+<http://lov.linkeddata.es/dataset/lov/vocabs/bmon/minLimit> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://lov.linkeddata.es/dataset/lov/vocabs/bmon/minLimit> <http://www.w3.org/2000/01/rdf-schema#domain> <http://lov.linkeddata.es/dataset/lov/vocabs/bmon/LimitRange> .
+<http://lov.linkeddata.es/dataset/lov/vocabs/bmon/minLimit> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#double> .
+# 
+# http://lov.linkeddata.es/dataset/lov/vocabs/bmon/offsetX
+<http://lov.linkeddata.es/dataset/lov/vocabs/bmon/offsetX> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://lov.linkeddata.es/dataset/lov/vocabs/bmon/offsetX> <http://www.w3.org/2000/01/rdf-schema#domain> <http://lov.linkeddata.es/dataset/lov/vocabs/bmon/LocationInEntity> .
+<http://lov.linkeddata.es/dataset/lov/vocabs/bmon/offsetX> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#double> .
+# 
+# http://lov.linkeddata.es/dataset/lov/vocabs/bmon/offsetY
+<http://lov.linkeddata.es/dataset/lov/vocabs/bmon/offsetY> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://lov.linkeddata.es/dataset/lov/vocabs/bmon/offsetY> <http://www.w3.org/2000/01/rdf-schema#domain> <http://lov.linkeddata.es/dataset/lov/vocabs/bmon/LocationInEntity> .
+<http://lov.linkeddata.es/dataset/lov/vocabs/bmon/offsetY> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#double> .
+# 
+# http://lov.linkeddata.es/dataset/lov/vocabs/bmon/offsetZ
+<http://lov.linkeddata.es/dataset/lov/vocabs/bmon/offsetZ> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://lov.linkeddata.es/dataset/lov/vocabs/bmon/offsetZ> <http://www.w3.org/2000/01/rdf-schema#domain> <http://lov.linkeddata.es/dataset/lov/vocabs/bmon/LocationInEntity> .
+<http://lov.linkeddata.es/dataset/lov/vocabs/bmon/offsetZ> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#double> .
+# 
+# http://lov.linkeddata.es/dataset/lov/vocabs/bmon/userInterfaceAddress
+<http://lov.linkeddata.es/dataset/lov/vocabs/bmon/userInterfaceAddress> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://lov.linkeddata.es/dataset/lov/vocabs/bmon/userInterfaceAddress> <http://www.w3.org/2000/01/rdf-schema#domain> <http://lov.linkeddata.es/dataset/lov/vocabs/bmon/MonitoringDeployment> .
+<http://lov.linkeddata.es/dataset/lov/vocabs/bmon/userInterfaceAddress> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#anyURI> .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Classes
+# #
+# #################################################################
+# 
+# 
+# http://lov.linkeddata.es/dataset/lov/vocabs/bmon/Acceleration
+<http://lov.linkeddata.es/dataset/lov/vocabs/bmon/Acceleration> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://lov.linkeddata.es/dataset/lov/vocabs/bmon/Acceleration> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/ns/sosa/ObservableProperty> .
+# 
+# http://lov.linkeddata.es/dataset/lov/vocabs/bmon/AccelerationSensor
+<http://lov.linkeddata.es/dataset/lov/vocabs/bmon/AccelerationSensor> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://lov.linkeddata.es/dataset/lov/vocabs/bmon/AccelerationSensor> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://lov.linkeddata.es/dataset/lov/vocabs/bmon/EntitySensor> .
+<http://lov.linkeddata.es/dataset/lov/vocabs/bmon/AccelerationSensor> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid2 .
+_:genid2 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid2 <http://www.w3.org/2002/07/owl#onProperty> <http://www.w3.org/ns/sosa/observes> .
+_:genid2 <http://www.w3.org/2002/07/owl#allValuesFrom> <http://lov.linkeddata.es/dataset/lov/vocabs/bmon/Acceleration> .
+# 
+# http://lov.linkeddata.es/dataset/lov/vocabs/bmon/AirPressure
+<http://lov.linkeddata.es/dataset/lov/vocabs/bmon/AirPressure> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://lov.linkeddata.es/dataset/lov/vocabs/bmon/AirPressure> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/ns/sosa/ObservableProperty> .
+# 
+# http://lov.linkeddata.es/dataset/lov/vocabs/bmon/AirPressureSensor
+<http://lov.linkeddata.es/dataset/lov/vocabs/bmon/AirPressureSensor> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://lov.linkeddata.es/dataset/lov/vocabs/bmon/AirPressureSensor> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://lov.linkeddata.es/dataset/lov/vocabs/bmon/WeatherSensor> .
+<http://lov.linkeddata.es/dataset/lov/vocabs/bmon/AirPressureSensor> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid3 .
+_:genid3 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid3 <http://www.w3.org/2002/07/owl#onProperty> <http://www.w3.org/ns/sosa/observes> .
+_:genid3 <http://www.w3.org/2002/07/owl#allValuesFrom> <http://lov.linkeddata.es/dataset/lov/vocabs/bmon/AirPressure> .
+# 
+# http://lov.linkeddata.es/dataset/lov/vocabs/bmon/AlarmRange
+<http://lov.linkeddata.es/dataset/lov/vocabs/bmon/AlarmRange> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://lov.linkeddata.es/dataset/lov/vocabs/bmon/AlarmRange> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://lov.linkeddata.es/dataset/lov/vocabs/bmon/LimitRange> .
+<http://lov.linkeddata.es/dataset/lov/vocabs/bmon/AlarmRange> <http://www.w3.org/2000/01/rdf-schema#comment> "Value outside of acceptable range" .
+# 
+# http://lov.linkeddata.es/dataset/lov/vocabs/bmon/Any
+<http://lov.linkeddata.es/dataset/lov/vocabs/bmon/Any> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://lov.linkeddata.es/dataset/lov/vocabs/bmon/Any> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://lov.linkeddata.es/dataset/lov/vocabs/bmon/HistoryFunctionType> .
+# 
+# http://lov.linkeddata.es/dataset/lov/vocabs/bmon/Avg
+<http://lov.linkeddata.es/dataset/lov/vocabs/bmon/Avg> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://lov.linkeddata.es/dataset/lov/vocabs/bmon/Avg> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://lov.linkeddata.es/dataset/lov/vocabs/bmon/HistoryFunctionType> .
+# 
+# http://lov.linkeddata.es/dataset/lov/vocabs/bmon/Corrosion
+<http://lov.linkeddata.es/dataset/lov/vocabs/bmon/Corrosion> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://lov.linkeddata.es/dataset/lov/vocabs/bmon/Corrosion> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/ns/sosa/ObservableProperty> .
+# 
+# http://lov.linkeddata.es/dataset/lov/vocabs/bmon/CorrosionSensor
+<http://lov.linkeddata.es/dataset/lov/vocabs/bmon/CorrosionSensor> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://lov.linkeddata.es/dataset/lov/vocabs/bmon/CorrosionSensor> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://lov.linkeddata.es/dataset/lov/vocabs/bmon/StructureSensor> .
+<http://lov.linkeddata.es/dataset/lov/vocabs/bmon/CorrosionSensor> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid4 .
+_:genid4 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid4 <http://www.w3.org/2002/07/owl#onProperty> <http://www.w3.org/ns/sosa/observes> .
+_:genid4 <http://www.w3.org/2002/07/owl#allValuesFrom> <http://lov.linkeddata.es/dataset/lov/vocabs/bmon/Corrosion> .
+# 
+# http://lov.linkeddata.es/dataset/lov/vocabs/bmon/DataRequest
+<http://lov.linkeddata.es/dataset/lov/vocabs/bmon/DataRequest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://lov.linkeddata.es/dataset/lov/vocabs/bmon/DataRequest> <http://www.w3.org/2000/01/rdf-schema#comment> "Parameters of a request" .
+# 
+# http://lov.linkeddata.es/dataset/lov/vocabs/bmon/Displacement
+<http://lov.linkeddata.es/dataset/lov/vocabs/bmon/Displacement> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://lov.linkeddata.es/dataset/lov/vocabs/bmon/Displacement> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/ns/sosa/ObservableProperty> .
+# 
+# http://lov.linkeddata.es/dataset/lov/vocabs/bmon/DisplacementSensor
+<http://lov.linkeddata.es/dataset/lov/vocabs/bmon/DisplacementSensor> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://lov.linkeddata.es/dataset/lov/vocabs/bmon/DisplacementSensor> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://lov.linkeddata.es/dataset/lov/vocabs/bmon/EntitySensor> .
+<http://lov.linkeddata.es/dataset/lov/vocabs/bmon/DisplacementSensor> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid5 .
+_:genid5 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid5 <http://www.w3.org/2002/07/owl#onProperty> <http://www.w3.org/ns/sosa/observes> .
+_:genid5 <http://www.w3.org/2002/07/owl#allValuesFrom> <http://lov.linkeddata.es/dataset/lov/vocabs/bmon/Displacement> .
+# 
+# http://lov.linkeddata.es/dataset/lov/vocabs/bmon/Entity
+<http://lov.linkeddata.es/dataset/lov/vocabs/bmon/Entity> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://lov.linkeddata.es/dataset/lov/vocabs/bmon/Entity> <http://www.w3.org/2000/01/rdf-schema#comment> "Entity that is observed or with respect to whom the location offset is specified" .
+# 
+# http://lov.linkeddata.es/dataset/lov/vocabs/bmon/EntitySensor
+<http://lov.linkeddata.es/dataset/lov/vocabs/bmon/EntitySensor> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://lov.linkeddata.es/dataset/lov/vocabs/bmon/EntitySensor> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/ns/sosa/Sensor> .
+<http://lov.linkeddata.es/dataset/lov/vocabs/bmon/EntitySensor> <http://www.w3.org/2000/01/rdf-schema#comment> "Sensor observing a fixed entity" .
+# 
+# http://lov.linkeddata.es/dataset/lov/vocabs/bmon/FiberStrain
+<http://lov.linkeddata.es/dataset/lov/vocabs/bmon/FiberStrain> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://lov.linkeddata.es/dataset/lov/vocabs/bmon/FiberStrain> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://lov.linkeddata.es/dataset/lov/vocabs/bmon/StrainGauge> .
+# 
+# http://lov.linkeddata.es/dataset/lov/vocabs/bmon/FiberStrainTemperatureCompensated
+<http://lov.linkeddata.es/dataset/lov/vocabs/bmon/FiberStrainTemperatureCompensated> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://lov.linkeddata.es/dataset/lov/vocabs/bmon/FiberStrainTemperatureCompensated> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://lov.linkeddata.es/dataset/lov/vocabs/bmon/FiberStrain> .
+<http://lov.linkeddata.es/dataset/lov/vocabs/bmon/FiberStrainTemperatureCompensated> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid6 .
+_:genid6 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid6 <http://www.w3.org/2002/07/owl#onProperty> <http://lov.linkeddata.es/dataset/lov/vocabs/bmon/hasCompensatinTemperature> .
+_:genid6 <http://www.w3.org/2002/07/owl#allValuesFrom> <http://lov.linkeddata.es/dataset/lov/vocabs/bmon/FiberTemperatureSensor> .
+<http://lov.linkeddata.es/dataset/lov/vocabs/bmon/FiberStrainTemperatureCompensated> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid7 .
+_:genid7 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid7 <http://www.w3.org/2002/07/owl#onProperty> <http://lov.linkeddata.es/dataset/lov/vocabs/bmon/hasFiberStrain> .
+_:genid7 <http://www.w3.org/2002/07/owl#allValuesFrom> <http://lov.linkeddata.es/dataset/lov/vocabs/bmon/FiberStrain> .
+# 
+# http://lov.linkeddata.es/dataset/lov/vocabs/bmon/FiberTemperatureSensor
+<http://lov.linkeddata.es/dataset/lov/vocabs/bmon/FiberTemperatureSensor> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://lov.linkeddata.es/dataset/lov/vocabs/bmon/FiberTemperatureSensor> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://lov.linkeddata.es/dataset/lov/vocabs/bmon/TemperatureSensor> .
+# 
+# http://lov.linkeddata.es/dataset/lov/vocabs/bmon/HistoryFunctionType
+<http://lov.linkeddata.es/dataset/lov/vocabs/bmon/HistoryFunctionType> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# http://lov.linkeddata.es/dataset/lov/vocabs/bmon/HttpRequest
+<http://lov.linkeddata.es/dataset/lov/vocabs/bmon/HttpRequest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://lov.linkeddata.es/dataset/lov/vocabs/bmon/HttpRequest> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://lov.linkeddata.es/dataset/lov/vocabs/bmon/DataRequest> .
+<http://lov.linkeddata.es/dataset/lov/vocabs/bmon/HttpRequest> <http://www.w3.org/2000/01/rdf-schema#comment> "Parameters of a request using REST" .
+# 
+# http://lov.linkeddata.es/dataset/lov/vocabs/bmon/LadderReferencePotentialSensor
+<http://lov.linkeddata.es/dataset/lov/vocabs/bmon/LadderReferencePotentialSensor> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://lov.linkeddata.es/dataset/lov/vocabs/bmon/LadderReferencePotentialSensor> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://lov.linkeddata.es/dataset/lov/vocabs/bmon/ReferencePotentialSensor> .
+# 
+# http://lov.linkeddata.es/dataset/lov/vocabs/bmon/LimitRange
+<http://lov.linkeddata.es/dataset/lov/vocabs/bmon/LimitRange> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# http://lov.linkeddata.es/dataset/lov/vocabs/bmon/LocationInEntity
+<http://lov.linkeddata.es/dataset/lov/vocabs/bmon/LocationInEntity> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://lov.linkeddata.es/dataset/lov/vocabs/bmon/LocationInEntity> <http://www.w3.org/2000/01/rdf-schema#comment> "Specifies the location as an offset in the local coordinates of an entity" .
+# 
+# http://lov.linkeddata.es/dataset/lov/vocabs/bmon/Max
+<http://lov.linkeddata.es/dataset/lov/vocabs/bmon/Max> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://lov.linkeddata.es/dataset/lov/vocabs/bmon/Max> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://lov.linkeddata.es/dataset/lov/vocabs/bmon/HistoryFunctionType> .
+# 
+# http://lov.linkeddata.es/dataset/lov/vocabs/bmon/Min
+<http://lov.linkeddata.es/dataset/lov/vocabs/bmon/Min> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://lov.linkeddata.es/dataset/lov/vocabs/bmon/Min> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://lov.linkeddata.es/dataset/lov/vocabs/bmon/HistoryFunctionType> .
+# 
+# http://lov.linkeddata.es/dataset/lov/vocabs/bmon/MonitoringDeployment
+<http://lov.linkeddata.es/dataset/lov/vocabs/bmon/MonitoringDeployment> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://lov.linkeddata.es/dataset/lov/vocabs/bmon/MonitoringDeployment> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/ns/ssn/Deployment> .
+# 
+# http://lov.linkeddata.es/dataset/lov/vocabs/bmon/RainAccumulation
+<http://lov.linkeddata.es/dataset/lov/vocabs/bmon/RainAccumulation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://lov.linkeddata.es/dataset/lov/vocabs/bmon/RainAccumulation> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/ns/sosa/ObservableProperty> .
+# 
+# http://lov.linkeddata.es/dataset/lov/vocabs/bmon/RainAccumulationSensor
+<http://lov.linkeddata.es/dataset/lov/vocabs/bmon/RainAccumulationSensor> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://lov.linkeddata.es/dataset/lov/vocabs/bmon/RainAccumulationSensor> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://lov.linkeddata.es/dataset/lov/vocabs/bmon/WeatherSensor> .
+<http://lov.linkeddata.es/dataset/lov/vocabs/bmon/RainAccumulationSensor> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid8 .
+_:genid8 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid8 <http://www.w3.org/2002/07/owl#onProperty> <http://www.w3.org/ns/sosa/observes> .
+_:genid8 <http://www.w3.org/2002/07/owl#allValuesFrom> <http://lov.linkeddata.es/dataset/lov/vocabs/bmon/RainAccumulation> .
+# 
+# http://lov.linkeddata.es/dataset/lov/vocabs/bmon/RainDuration
+<http://lov.linkeddata.es/dataset/lov/vocabs/bmon/RainDuration> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://lov.linkeddata.es/dataset/lov/vocabs/bmon/RainDuration> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/ns/sosa/ObservableProperty> .
+# 
+# http://lov.linkeddata.es/dataset/lov/vocabs/bmon/RainDurationSensor
+<http://lov.linkeddata.es/dataset/lov/vocabs/bmon/RainDurationSensor> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://lov.linkeddata.es/dataset/lov/vocabs/bmon/RainDurationSensor> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://lov.linkeddata.es/dataset/lov/vocabs/bmon/WeatherSensor> .
+<http://lov.linkeddata.es/dataset/lov/vocabs/bmon/RainDurationSensor> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid9 .
+_:genid9 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid9 <http://www.w3.org/2002/07/owl#onProperty> <http://www.w3.org/ns/sosa/observes> .
+_:genid9 <http://www.w3.org/2002/07/owl#allValuesFrom> <http://lov.linkeddata.es/dataset/lov/vocabs/bmon/RainDuration> .
+# 
+# http://lov.linkeddata.es/dataset/lov/vocabs/bmon/RainIntensity
+<http://lov.linkeddata.es/dataset/lov/vocabs/bmon/RainIntensity> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://lov.linkeddata.es/dataset/lov/vocabs/bmon/RainIntensity> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/ns/sosa/ObservableProperty> .
+# 
+# http://lov.linkeddata.es/dataset/lov/vocabs/bmon/RainIntensitySensor
+<http://lov.linkeddata.es/dataset/lov/vocabs/bmon/RainIntensitySensor> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://lov.linkeddata.es/dataset/lov/vocabs/bmon/RainIntensitySensor> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://lov.linkeddata.es/dataset/lov/vocabs/bmon/WeatherSensor> .
+<http://lov.linkeddata.es/dataset/lov/vocabs/bmon/RainIntensitySensor> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid10 .
+_:genid10 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid10 <http://www.w3.org/2002/07/owl#onProperty> <http://www.w3.org/ns/sosa/observes> .
+_:genid10 <http://www.w3.org/2002/07/owl#allValuesFrom> <http://lov.linkeddata.es/dataset/lov/vocabs/bmon/RainIntensity> .
+# 
+# http://lov.linkeddata.es/dataset/lov/vocabs/bmon/ReferencePotentialSensor
+<http://lov.linkeddata.es/dataset/lov/vocabs/bmon/ReferencePotentialSensor> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://lov.linkeddata.es/dataset/lov/vocabs/bmon/ReferencePotentialSensor> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://lov.linkeddata.es/dataset/lov/vocabs/bmon/CorrosionSensor> .
+# 
+# http://lov.linkeddata.es/dataset/lov/vocabs/bmon/RelativeHumidity
+<http://lov.linkeddata.es/dataset/lov/vocabs/bmon/RelativeHumidity> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://lov.linkeddata.es/dataset/lov/vocabs/bmon/RelativeHumidity> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/ns/sosa/ObservableProperty> .
+# 
+# http://lov.linkeddata.es/dataset/lov/vocabs/bmon/RelativeHumiditySensor
+<http://lov.linkeddata.es/dataset/lov/vocabs/bmon/RelativeHumiditySensor> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://lov.linkeddata.es/dataset/lov/vocabs/bmon/RelativeHumiditySensor> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://lov.linkeddata.es/dataset/lov/vocabs/bmon/WeatherSensor> .
+<http://lov.linkeddata.es/dataset/lov/vocabs/bmon/RelativeHumiditySensor> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid11 .
+_:genid11 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid11 <http://www.w3.org/2002/07/owl#onProperty> <http://www.w3.org/ns/sosa/observes> .
+_:genid11 <http://www.w3.org/2002/07/owl#allValuesFrom> <http://lov.linkeddata.es/dataset/lov/vocabs/bmon/RelativeHumidity> .
+# 
+# http://lov.linkeddata.es/dataset/lov/vocabs/bmon/SensorSegment
+<http://lov.linkeddata.es/dataset/lov/vocabs/bmon/SensorSegment> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://lov.linkeddata.es/dataset/lov/vocabs/bmon/SensorSegment> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/ns/ssn/System> .
+# 
+# http://lov.linkeddata.es/dataset/lov/vocabs/bmon/Strain
+<http://lov.linkeddata.es/dataset/lov/vocabs/bmon/Strain> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://lov.linkeddata.es/dataset/lov/vocabs/bmon/Strain> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/ns/sosa/ObservableProperty> .
+# 
+# http://lov.linkeddata.es/dataset/lov/vocabs/bmon/StrainGauge
+<http://lov.linkeddata.es/dataset/lov/vocabs/bmon/StrainGauge> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://lov.linkeddata.es/dataset/lov/vocabs/bmon/StrainGauge> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://lov.linkeddata.es/dataset/lov/vocabs/bmon/StructureSensor> .
+<http://lov.linkeddata.es/dataset/lov/vocabs/bmon/StrainGauge> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid12 .
+_:genid12 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid12 <http://www.w3.org/2002/07/owl#onProperty> <http://www.w3.org/ns/sosa/observes> .
+_:genid12 <http://www.w3.org/2002/07/owl#allValuesFrom> <http://lov.linkeddata.es/dataset/lov/vocabs/bmon/Strain> .
+# 
+# http://lov.linkeddata.es/dataset/lov/vocabs/bmon/StructureSensor
+<http://lov.linkeddata.es/dataset/lov/vocabs/bmon/StructureSensor> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://lov.linkeddata.es/dataset/lov/vocabs/bmon/StructureSensor> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://lov.linkeddata.es/dataset/lov/vocabs/bmon/EntitySensor> .
+# 
+# http://lov.linkeddata.es/dataset/lov/vocabs/bmon/Temperature
+<http://lov.linkeddata.es/dataset/lov/vocabs/bmon/Temperature> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://lov.linkeddata.es/dataset/lov/vocabs/bmon/Temperature> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/ns/sosa/ObservableProperty> .
+# 
+# http://lov.linkeddata.es/dataset/lov/vocabs/bmon/TemperatureSensor
+<http://lov.linkeddata.es/dataset/lov/vocabs/bmon/TemperatureSensor> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://lov.linkeddata.es/dataset/lov/vocabs/bmon/TemperatureSensor> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://lov.linkeddata.es/dataset/lov/vocabs/bmon/EntitySensor> .
+<http://lov.linkeddata.es/dataset/lov/vocabs/bmon/TemperatureSensor> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid13 .
+_:genid13 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid13 <http://www.w3.org/2002/07/owl#onProperty> <http://www.w3.org/ns/sosa/observes> .
+_:genid13 <http://www.w3.org/2002/07/owl#allValuesFrom> <http://lov.linkeddata.es/dataset/lov/vocabs/bmon/Temperature> .
+# 
+# http://lov.linkeddata.es/dataset/lov/vocabs/bmon/Trend
+<http://lov.linkeddata.es/dataset/lov/vocabs/bmon/Trend> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://lov.linkeddata.es/dataset/lov/vocabs/bmon/Trend> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://lov.linkeddata.es/dataset/lov/vocabs/bmon/HistoryFunctionType> .
+# 
+# http://lov.linkeddata.es/dataset/lov/vocabs/bmon/ValueHistory
+<http://lov.linkeddata.es/dataset/lov/vocabs/bmon/ValueHistory> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://lov.linkeddata.es/dataset/lov/vocabs/bmon/ValueHistory> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/ns/sosa/Sample> .
+<http://lov.linkeddata.es/dataset/lov/vocabs/bmon/ValueHistory> <http://www.w3.org/2000/01/rdf-schema#comment> "History of values" .
+# 
+# http://lov.linkeddata.es/dataset/lov/vocabs/bmon/WarningRange
+<http://lov.linkeddata.es/dataset/lov/vocabs/bmon/WarningRange> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://lov.linkeddata.es/dataset/lov/vocabs/bmon/WarningRange> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://lov.linkeddata.es/dataset/lov/vocabs/bmon/LimitRange> .
+<http://lov.linkeddata.es/dataset/lov/vocabs/bmon/WarningRange> <http://www.w3.org/2000/01/rdf-schema#comment> "Value outside of normal range" .
+# 
+# http://lov.linkeddata.es/dataset/lov/vocabs/bmon/WeatherSensor
+<http://lov.linkeddata.es/dataset/lov/vocabs/bmon/WeatherSensor> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://lov.linkeddata.es/dataset/lov/vocabs/bmon/WeatherSensor> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://lov.linkeddata.es/dataset/lov/vocabs/bmon/EntitySensor> .
+# 
+# http://lov.linkeddata.es/dataset/lov/vocabs/bmon/WeatherStation
+<http://lov.linkeddata.es/dataset/lov/vocabs/bmon/WeatherStation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://lov.linkeddata.es/dataset/lov/vocabs/bmon/WeatherStation> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/ns/ssn/System> .
+# 
+# http://lov.linkeddata.es/dataset/lov/vocabs/bmon/WindDirection
+<http://lov.linkeddata.es/dataset/lov/vocabs/bmon/WindDirection> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://lov.linkeddata.es/dataset/lov/vocabs/bmon/WindDirection> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/ns/sosa/ObservableProperty> .
+# 
+# http://lov.linkeddata.es/dataset/lov/vocabs/bmon/WindDirectionSensor
+<http://lov.linkeddata.es/dataset/lov/vocabs/bmon/WindDirectionSensor> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://lov.linkeddata.es/dataset/lov/vocabs/bmon/WindDirectionSensor> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://lov.linkeddata.es/dataset/lov/vocabs/bmon/WeatherSensor> .
+<http://lov.linkeddata.es/dataset/lov/vocabs/bmon/WindDirectionSensor> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid14 .
+_:genid14 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid14 <http://www.w3.org/2002/07/owl#onProperty> <http://www.w3.org/ns/sosa/observes> .
+_:genid14 <http://www.w3.org/2002/07/owl#allValuesFrom> <http://lov.linkeddata.es/dataset/lov/vocabs/bmon/WindDirection> .
+# 
+# http://lov.linkeddata.es/dataset/lov/vocabs/bmon/WindSpeed
+<http://lov.linkeddata.es/dataset/lov/vocabs/bmon/WindSpeed> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://lov.linkeddata.es/dataset/lov/vocabs/bmon/WindSpeed> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/ns/sosa/ObservableProperty> .
+# 
+# http://lov.linkeddata.es/dataset/lov/vocabs/bmon/WindSpeedSensor
+<http://lov.linkeddata.es/dataset/lov/vocabs/bmon/WindSpeedSensor> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://lov.linkeddata.es/dataset/lov/vocabs/bmon/WindSpeedSensor> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://lov.linkeddata.es/dataset/lov/vocabs/bmon/WeatherSensor> .
+<http://lov.linkeddata.es/dataset/lov/vocabs/bmon/WindSpeedSensor> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid15 .
+_:genid15 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid15 <http://www.w3.org/2002/07/owl#onProperty> <http://www.w3.org/ns/sosa/observes> .
+_:genid15 <http://www.w3.org/2002/07/owl#allValuesFrom> <http://lov.linkeddata.es/dataset/lov/vocabs/bmon/WindSpeed> .
+# 
+# http://www.w3.org/2001/XMLSchema#DateTime
+# 
+# http://www.w3.org/2001/XMLSchema#Duration
+# 
+# http://www.w3.org/2001/XMLSchema#Number
+# 
+# http://www.w3.org/2001/XMLSchema#String
+# 
+# http://www.w3.org/2002/07/owl#Property
+<http://www.w3.org/2002/07/owl#Property> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Individuals
+# #
+# #################################################################
+# 
+# 
+# http://lov.linkeddata.es/dataset/lov/vocabs/bmon/callAddress
+<http://lov.linkeddata.es/dataset/lov/vocabs/bmon/callAddress> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://lov.linkeddata.es/dataset/lov/vocabs/bmon/callAddress> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Property> .
+# 
+# http://lov.linkeddata.es/dataset/lov/vocabs/bmon/channel
+<http://lov.linkeddata.es/dataset/lov/vocabs/bmon/channel> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://lov.linkeddata.es/dataset/lov/vocabs/bmon/channel> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Property> .
+# 
+# http://lov.linkeddata.es/dataset/lov/vocabs/bmon/dataInterface
+<http://lov.linkeddata.es/dataset/lov/vocabs/bmon/dataInterface> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://lov.linkeddata.es/dataset/lov/vocabs/bmon/dataInterface> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Property> .
+# 
+# http://lov.linkeddata.es/dataset/lov/vocabs/bmon/hasAccelerationX
+<http://lov.linkeddata.es/dataset/lov/vocabs/bmon/hasAccelerationX> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://lov.linkeddata.es/dataset/lov/vocabs/bmon/hasAccelerationX> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Property> .
+# 
+# http://lov.linkeddata.es/dataset/lov/vocabs/bmon/hasAccelerationY
+<http://lov.linkeddata.es/dataset/lov/vocabs/bmon/hasAccelerationY> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://lov.linkeddata.es/dataset/lov/vocabs/bmon/hasAccelerationY> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Property> .
+# 
+# http://lov.linkeddata.es/dataset/lov/vocabs/bmon/hasAccelerationZ
+<http://lov.linkeddata.es/dataset/lov/vocabs/bmon/hasAccelerationZ> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://lov.linkeddata.es/dataset/lov/vocabs/bmon/hasAccelerationZ> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Property> .
+# 
+# http://lov.linkeddata.es/dataset/lov/vocabs/bmon/hasBasicAcceleration
+<http://lov.linkeddata.es/dataset/lov/vocabs/bmon/hasBasicAcceleration> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://lov.linkeddata.es/dataset/lov/vocabs/bmon/hasBasicAcceleration> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Property> .
+# 
+# http://lov.linkeddata.es/dataset/lov/vocabs/bmon/hasCompassAcceleration
+<http://lov.linkeddata.es/dataset/lov/vocabs/bmon/hasCompassAcceleration> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://lov.linkeddata.es/dataset/lov/vocabs/bmon/hasCompassAcceleration> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Property> .
+# 
+# http://lov.linkeddata.es/dataset/lov/vocabs/bmon/hasCompensatingTemperature
+<http://lov.linkeddata.es/dataset/lov/vocabs/bmon/hasCompensatingTemperature> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://lov.linkeddata.es/dataset/lov/vocabs/bmon/hasCompensatingTemperature> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Property> .
+# 
+# http://lov.linkeddata.es/dataset/lov/vocabs/bmon/hasFiberStrain
+<http://lov.linkeddata.es/dataset/lov/vocabs/bmon/hasFiberStrain> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://lov.linkeddata.es/dataset/lov/vocabs/bmon/hasFiberStrain> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Property> .
+# 
+# http://lov.linkeddata.es/dataset/lov/vocabs/bmon/hasGyroscopicAcceleration
+<http://lov.linkeddata.es/dataset/lov/vocabs/bmon/hasGyroscopicAcceleration> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://lov.linkeddata.es/dataset/lov/vocabs/bmon/hasGyroscopicAcceleration> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Property> .
+# 
+# http://lov.linkeddata.es/dataset/lov/vocabs/bmon/httpApiKey
+<http://lov.linkeddata.es/dataset/lov/vocabs/bmon/httpApiKey> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://lov.linkeddata.es/dataset/lov/vocabs/bmon/httpApiKey> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Property> .
+# 
+# http://lov.linkeddata.es/dataset/lov/vocabs/bmon/httpHeader
+<http://lov.linkeddata.es/dataset/lov/vocabs/bmon/httpHeader> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://lov.linkeddata.es/dataset/lov/vocabs/bmon/httpHeader> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Property> .
+# 
+# http://lov.linkeddata.es/dataset/lov/vocabs/bmon/httpMethod
+<http://lov.linkeddata.es/dataset/lov/vocabs/bmon/httpMethod> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://lov.linkeddata.es/dataset/lov/vocabs/bmon/httpMethod> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Property> .
+# 
+# http://lov.linkeddata.es/dataset/lov/vocabs/bmon/httpRequestBody
+<http://lov.linkeddata.es/dataset/lov/vocabs/bmon/httpRequestBody> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://lov.linkeddata.es/dataset/lov/vocabs/bmon/httpRequestBody> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Property> .
+# 
+# http://lov.linkeddata.es/dataset/lov/vocabs/bmon/limitLabel
+<http://lov.linkeddata.es/dataset/lov/vocabs/bmon/limitLabel> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://lov.linkeddata.es/dataset/lov/vocabs/bmon/limitLabel> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Property> .
+# 
+# http://lov.linkeddata.es/dataset/lov/vocabs/bmon/limits
+<http://lov.linkeddata.es/dataset/lov/vocabs/bmon/limits> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://lov.linkeddata.es/dataset/lov/vocabs/bmon/limits> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Property> .
+# 
+# http://lov.linkeddata.es/dataset/lov/vocabs/bmon/locatedAt
+<http://lov.linkeddata.es/dataset/lov/vocabs/bmon/locatedAt> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://lov.linkeddata.es/dataset/lov/vocabs/bmon/locatedAt> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Property> .
+# 
+# http://lov.linkeddata.es/dataset/lov/vocabs/bmon/locationEntity
+<http://lov.linkeddata.es/dataset/lov/vocabs/bmon/locationEntity> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://lov.linkeddata.es/dataset/lov/vocabs/bmon/locationEntity> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Property> .
+# 
+# http://lov.linkeddata.es/dataset/lov/vocabs/bmon/maxLimit
+<http://lov.linkeddata.es/dataset/lov/vocabs/bmon/maxLimit> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://lov.linkeddata.es/dataset/lov/vocabs/bmon/maxLimit> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Property> .
+# 
+# http://lov.linkeddata.es/dataset/lov/vocabs/bmon/minLimit
+<http://lov.linkeddata.es/dataset/lov/vocabs/bmon/minLimit> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://lov.linkeddata.es/dataset/lov/vocabs/bmon/minLimit> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Property> .
+# 
+# http://lov.linkeddata.es/dataset/lov/vocabs/bmon/observedEntity
+<http://lov.linkeddata.es/dataset/lov/vocabs/bmon/observedEntity> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://lov.linkeddata.es/dataset/lov/vocabs/bmon/observedEntity> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Property> .
+# 
+# http://lov.linkeddata.es/dataset/lov/vocabs/bmon/offsetX
+<http://lov.linkeddata.es/dataset/lov/vocabs/bmon/offsetX> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://lov.linkeddata.es/dataset/lov/vocabs/bmon/offsetX> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Property> .
+# 
+# http://lov.linkeddata.es/dataset/lov/vocabs/bmon/offsetY
+<http://lov.linkeddata.es/dataset/lov/vocabs/bmon/offsetY> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://lov.linkeddata.es/dataset/lov/vocabs/bmon/offsetY> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Property> .
+# 
+# http://lov.linkeddata.es/dataset/lov/vocabs/bmon/offsetZ
+<http://lov.linkeddata.es/dataset/lov/vocabs/bmon/offsetZ> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://lov.linkeddata.es/dataset/lov/vocabs/bmon/offsetZ> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Property> .
+# 
+# http://lov.linkeddata.es/dataset/lov/vocabs/bmon/segment
+<http://lov.linkeddata.es/dataset/lov/vocabs/bmon/segment> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://lov.linkeddata.es/dataset/lov/vocabs/bmon/segment> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Property> .
+# 
+# http://lov.linkeddata.es/dataset/lov/vocabs/bmon/unit
+<http://lov.linkeddata.es/dataset/lov/vocabs/bmon/unit> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://lov.linkeddata.es/dataset/lov/vocabs/bmon/unit> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Property> .
+# 
+# http://lov.linkeddata.es/dataset/lov/vocabs/bmon/userInterfaceAddress
+<http://lov.linkeddata.es/dataset/lov/vocabs/bmon/userInterfaceAddress> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://lov.linkeddata.es/dataset/lov/vocabs/bmon/userInterfaceAddress> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Property> .
+# 
+# http://lov.linkeddata.es/dataset/lov/vocabs/bmon/valueFunction
+<http://lov.linkeddata.es/dataset/lov/vocabs/bmon/valueFunction> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://lov.linkeddata.es/dataset/lov/vocabs/bmon/valueFunction> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Property> .
+# 
+# http://lov.linkeddata.es/dataset/lov/vocabs/bmon/valuesCount
+<http://lov.linkeddata.es/dataset/lov/vocabs/bmon/valuesCount> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://lov.linkeddata.es/dataset/lov/vocabs/bmon/valuesCount> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Property> .
+# 
+# http://lov.linkeddata.es/dataset/lov/vocabs/bmon/valuesFrom
+<http://lov.linkeddata.es/dataset/lov/vocabs/bmon/valuesFrom> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://lov.linkeddata.es/dataset/lov/vocabs/bmon/valuesFrom> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Property> .
+# 
+# http://lov.linkeddata.es/dataset/lov/vocabs/bmon/valuesStep
+<http://lov.linkeddata.es/dataset/lov/vocabs/bmon/valuesStep> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://lov.linkeddata.es/dataset/lov/vocabs/bmon/valuesStep> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Property> .
+# 
+# http://lov.linkeddata.es/dataset/lov/vocabs/bmon/valuesTo
+<http://lov.linkeddata.es/dataset/lov/vocabs/bmon/valuesTo> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://lov.linkeddata.es/dataset/lov/vocabs/bmon/valuesTo> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Property> .
+# 
+_:genid16 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://xmlns.com/foaf/0.1/Agent> .
+_:genid16 <http://xmlns.com/foaf/0.1/name> "SmartBridgeFM project"@en .
+# 
+# 
+# #################################################################
+# #
+# #    Annotations
+# #
+# #################################################################
+# 
+# 
+<http://lov.linkeddata.es/dataset/lov/vocabs/bmon/callAddress> <http://www.w3.org/2000/01/rdf-schema#comment> "Address of a call" .
+# 
+<http://lov.linkeddata.es/dataset/lov/vocabs/bmon/httpApiKey> <http://www.w3.org/2000/01/rdf-schema#comment> "Association of an api key to a call" .
+# 
+<http://lov.linkeddata.es/dataset/lov/vocabs/bmon/httpHeader> <http://www.w3.org/2000/01/rdf-schema#comment> "Association of a header to a call" .
+# 
+<http://lov.linkeddata.es/dataset/lov/vocabs/bmon/httpMethod> <http://www.w3.org/2000/01/rdf-schema#comment> "Method used in a REST call" .
+# 
+<http://lov.linkeddata.es/dataset/lov/vocabs/bmon/httpRequestBody> <http://www.w3.org/2000/01/rdf-schema#comment> "Association of a body to a call" .
+# 
+# Generated by the OWL API (version 5.1.7) https://github.com/owlcs/owlapi/
