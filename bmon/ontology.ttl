@@ -1,31 +1,39 @@
-@prefix : <http://lov.linkeddata.es/dataset/lov/vocabs/bmon/> .
+@prefix : <https://smartbridgefm.github.io/bmon/> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix xml: <http://www.w3.org/XML/1998/namespace> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
-@base <http://lov.linkeddata.es/dataset/lov/vocabs/bmon/> .
+@base <https://smartbridgefm.github.io/bmon/> .
 
-<http://lov.linkeddata.es/dataset/lov/vocabs/bmon/> rdf:type owl:Ontology ;
-                                                     owl:imports <http://www.w3.org/ns/sosa/> ,
-                                                                 <http://www.w3.org/ns/ssn/> ;
-                                                     <http://purl.org/dc/terms/created> "2018-08-31"^^xsd:date ;
-                                                     <http://purl.org/dc/terms/creator> _:genid1 ;
-                                                     <http://purl.org/dc/terms/description> "Ontology for bridge monitoring that extends SSN/SOSA with bridge specific concepts."@en ;
-                                                     <http://purl.org/dc/terms/license> <http://www.opengeospatial.org/ogc/Software> ,
-                                                                                        <http://www.w3.org/Consortium/Legal/2015/copyright-software-and-document> ;
-                                                     <http://purl.org/dc/terms/title> "Bridge Monitoring Ontology"@en ;
-                                                     <http://purl.org/vocab/vann/preferredNamespacePrefix> "bmon" ;
-                                                     <http://purl.org/vocab/vann/preferredNamespaceUri> "https://smartbridgefm.github.io/bmon/" .
+<https://smartbridgefm.github.io/bmon/> rdf:type owl:Ontology ;
+                                         owl:imports <http://www.w3.org/ns/sosa/> ,
+                                                     <http://www.w3.org/ns/ssn/> ;
+                                         <http://purl.org/dc/terms/constributor> _:genid1 ;
+                                         <http://purl.org/dc/terms/created> "2018-08-31"^^xsd:date ;
+                                         <http://purl.org/dc/terms/creator> _:genid2 ,
+                                                                            _:genid3 ;
+                                         <http://purl.org/dc/terms/description> "Ontology for bridge monitoring that extends SSN/SOSA with bridge specific concepts."@en ;
+                                         <http://purl.org/dc/terms/license> <http://www.opengeospatial.org/ogc/Software> ,
+                                                                            <http://www.w3.org/Consortium/Legal/2015/copyright-software-and-document> ;
+                                         <http://purl.org/dc/terms/title> "Bridge Monitoring Ontology"@en ;
+                                         <http://purl.org/vocab/vann/preferredNamespacePrefix> "bmon" ;
+                                         <http://purl.org/vocab/vann/preferredNamespaceUri> "https://smartbridgefm.github.io/bmon/" .
 
-_:genid1 rdf:type <http://xmlns.com/foaf/0.1/Agent> ;
+_:genid1 rdf:type <http://xmlns.com/foaf/0.1/Person> ;
+          <http://xmlns.com/foaf/0.1/name> "Markku Kiviniemi" .
+
+_:genid2 rdf:type <http://xmlns.com/foaf/0.1/Agent> ;
           <http://xmlns.com/foaf/0.1/name> "SmartBridgeFM project"@en .
+
+_:genid3 rdf:type <http://xmlns.com/foaf/0.1/Person> ;
+          <http://xmlns.com/foaf/0.1/name> "Seppo Törmä" .
 
 #################################################################
 #    Annotation properties
 #################################################################
 
-###  http://lov.linkeddata.es/dataset/lov/vocabs/bmon/httpMethod
+###  https://smartbridgefm.github.io/bmon/httpMethod
 :httpMethod rdf:type owl:AnnotationProperty ;
             rdfs:domain :DataRequest .
 
@@ -34,164 +42,164 @@ _:genid1 rdf:type <http://xmlns.com/foaf/0.1/Agent> ;
 #    Object Properties
 #################################################################
 
-###  http://lov.linkeddata.es/dataset/lov/vocabs/bmon/callAddress
+###  https://smartbridgefm.github.io/bmon/callAddress
 :callAddress rdf:type owl:ObjectProperty ;
              rdfs:domain :DataRequest ;
              rdfs:range xsd:String .
 
 
-###  http://lov.linkeddata.es/dataset/lov/vocabs/bmon/channel
+###  https://smartbridgefm.github.io/bmon/channel
 :channel rdf:type owl:ObjectProperty ;
          rdfs:domain :MonitoringDeployment ;
          rdfs:range :EntitySensor .
 
 
-###  http://lov.linkeddata.es/dataset/lov/vocabs/bmon/dataInterface
+###  https://smartbridgefm.github.io/bmon/dataInterface
 :dataInterface rdf:type owl:ObjectProperty ;
                rdfs:domain :MonitoringDeployment ;
                rdfs:range :DataRequest .
 
 
-###  http://lov.linkeddata.es/dataset/lov/vocabs/bmon/hasAccelerationX
+###  https://smartbridgefm.github.io/bmon/hasAccelerationX
 :hasAccelerationX rdf:type owl:ObjectProperty ;
                   rdfs:subPropertyOf <http://www.w3.org/ns/ssn/hasSubSystem> ;
                   rdfs:domain :AccelerationSensor ;
                   rdfs:range :AccelerationSensor .
 
 
-###  http://lov.linkeddata.es/dataset/lov/vocabs/bmon/hasAccelerationY
+###  https://smartbridgefm.github.io/bmon/hasAccelerationY
 :hasAccelerationY rdf:type owl:ObjectProperty ;
                   rdfs:subPropertyOf <http://www.w3.org/ns/ssn/hasSubSystem> ;
                   rdfs:domain :AccelerationSensor ;
                   rdfs:range :AccelerationSensor .
 
 
-###  http://lov.linkeddata.es/dataset/lov/vocabs/bmon/hasAccelerationZ
+###  https://smartbridgefm.github.io/bmon/hasAccelerationZ
 :hasAccelerationZ rdf:type owl:ObjectProperty ;
                   rdfs:subPropertyOf <http://www.w3.org/ns/ssn/hasSubSystem> ;
                   rdfs:domain :AccelerationSensor ;
                   rdfs:range :AccelerationSensor .
 
 
-###  http://lov.linkeddata.es/dataset/lov/vocabs/bmon/hasBasicAcceleration
+###  https://smartbridgefm.github.io/bmon/hasBasicAcceleration
 :hasBasicAcceleration rdf:type owl:ObjectProperty ;
                       rdfs:subPropertyOf <http://www.w3.org/ns/ssn/hasSubSystem> ;
                       rdfs:domain :AccelerationSensor ;
                       rdfs:range :AccelerationSensor .
 
 
-###  http://lov.linkeddata.es/dataset/lov/vocabs/bmon/hasCompassAcceleration
+###  https://smartbridgefm.github.io/bmon/hasCompassAcceleration
 :hasCompassAcceleration rdf:type owl:ObjectProperty ;
                         rdfs:subPropertyOf <http://www.w3.org/ns/ssn/hasSubSystem> ;
                         rdfs:domain :AccelerationSensor ;
                         rdfs:range :AccelerationSensor .
 
 
-###  http://lov.linkeddata.es/dataset/lov/vocabs/bmon/hasCompensatinTemperature
+###  https://smartbridgefm.github.io/bmon/hasCompensatinTemperature
 :hasCompensatinTemperature rdf:type owl:ObjectProperty .
 
 
-###  http://lov.linkeddata.es/dataset/lov/vocabs/bmon/hasCompensatingTemperature
+###  https://smartbridgefm.github.io/bmon/hasCompensatingTemperature
 :hasCompensatingTemperature rdf:type owl:ObjectProperty ;
                             rdfs:subPropertyOf <http://www.w3.org/ns/ssn/hasSubSystem> ;
                             rdfs:domain :FiberStrainTemperatureCompensated ;
                             rdfs:range :TemperatureSensor .
 
 
-###  http://lov.linkeddata.es/dataset/lov/vocabs/bmon/hasFiberStrain
+###  https://smartbridgefm.github.io/bmon/hasFiberStrain
 :hasFiberStrain rdf:type owl:ObjectProperty ;
                 rdfs:subPropertyOf <http://www.w3.org/ns/ssn/hasSubSystem> ;
                 rdfs:domain :FiberStrainTemperatureCompensated ;
                 rdfs:range :FiberStrain .
 
 
-###  http://lov.linkeddata.es/dataset/lov/vocabs/bmon/hasGyroscopicAcceleration
+###  https://smartbridgefm.github.io/bmon/hasGyroscopicAcceleration
 :hasGyroscopicAcceleration rdf:type owl:ObjectProperty ;
                            rdfs:subPropertyOf <http://www.w3.org/ns/ssn/hasSubSystem> ;
                            rdfs:domain :AccelerationSensor ;
                            rdfs:range :AccelerationSensor .
 
 
-###  http://lov.linkeddata.es/dataset/lov/vocabs/bmon/httpApiKey
+###  https://smartbridgefm.github.io/bmon/httpApiKey
 :httpApiKey rdf:type owl:ObjectProperty ;
             rdfs:subPropertyOf :httpHeader ;
             rdfs:domain :HttpRequest ;
             rdfs:range xsd:String .
 
 
-###  http://lov.linkeddata.es/dataset/lov/vocabs/bmon/httpHeader
+###  https://smartbridgefm.github.io/bmon/httpHeader
 :httpHeader rdf:type owl:ObjectProperty ;
             rdfs:domain :HttpRequest ;
             rdfs:range xsd:String .
 
 
-###  http://lov.linkeddata.es/dataset/lov/vocabs/bmon/httpRequestBody
+###  https://smartbridgefm.github.io/bmon/httpRequestBody
 :httpRequestBody rdf:type owl:ObjectProperty ;
                  rdfs:domain :HttpRequest ;
                  rdfs:range xsd:String .
 
 
-###  http://lov.linkeddata.es/dataset/lov/vocabs/bmon/limits
+###  https://smartbridgefm.github.io/bmon/limits
 :limits rdf:type owl:ObjectProperty ;
         rdfs:domain :EntitySensor ;
         rdfs:range :LimitRange .
 
 
-###  http://lov.linkeddata.es/dataset/lov/vocabs/bmon/locatedAt
+###  https://smartbridgefm.github.io/bmon/locatedAt
 :locatedAt rdf:type owl:ObjectProperty ;
            rdfs:domain :EntitySensor ;
            rdfs:range :LocationInEntity .
 
 
-###  http://lov.linkeddata.es/dataset/lov/vocabs/bmon/locationEntity
+###  https://smartbridgefm.github.io/bmon/locationEntity
 :locationEntity rdf:type owl:ObjectProperty ;
                 rdfs:domain :LocationInEntity ;
                 rdfs:range :Entity .
 
 
-###  http://lov.linkeddata.es/dataset/lov/vocabs/bmon/observedEntity
+###  https://smartbridgefm.github.io/bmon/observedEntity
 :observedEntity rdf:type owl:ObjectProperty ;
                 rdfs:domain :EntitySensor ;
                 rdfs:range :Entity .
 
 
-###  http://lov.linkeddata.es/dataset/lov/vocabs/bmon/segment
+###  https://smartbridgefm.github.io/bmon/segment
 :segment rdf:type owl:ObjectProperty ;
          rdfs:domain :MonitoringDeployment ;
          rdfs:range :SensorSegment .
 
 
-###  http://lov.linkeddata.es/dataset/lov/vocabs/bmon/unit
+###  https://smartbridgefm.github.io/bmon/unit
 :unit rdf:type owl:ObjectProperty ;
       rdfs:domain :EntitySensor ;
       rdfs:range xsd:String .
 
 
-###  http://lov.linkeddata.es/dataset/lov/vocabs/bmon/valueFunction
+###  https://smartbridgefm.github.io/bmon/valueFunction
 :valueFunction rdf:type owl:ObjectProperty ;
                rdfs:domain :ValueHistory ;
                rdfs:range :HistoryFunctionType .
 
 
-###  http://lov.linkeddata.es/dataset/lov/vocabs/bmon/valuesCount
+###  https://smartbridgefm.github.io/bmon/valuesCount
 :valuesCount rdf:type owl:ObjectProperty ;
              rdfs:domain :ValueHistory ;
              rdfs:range xsd:Number .
 
 
-###  http://lov.linkeddata.es/dataset/lov/vocabs/bmon/valuesFrom
+###  https://smartbridgefm.github.io/bmon/valuesFrom
 :valuesFrom rdf:type owl:ObjectProperty ;
             rdfs:domain :ValueHistory ;
             rdfs:range xsd:DateTime .
 
 
-###  http://lov.linkeddata.es/dataset/lov/vocabs/bmon/valuesStep
+###  https://smartbridgefm.github.io/bmon/valuesStep
 :valuesStep rdf:type owl:ObjectProperty ;
             rdfs:domain :ValueHistory ;
             rdfs:range xsd:Duration .
 
 
-###  http://lov.linkeddata.es/dataset/lov/vocabs/bmon/valuesTo
+###  https://smartbridgefm.github.io/bmon/valuesTo
 :valuesTo rdf:type owl:ObjectProperty ;
           rdfs:domain :ValueHistory ;
           rdfs:range xsd:DateTime .
@@ -201,43 +209,43 @@ _:genid1 rdf:type <http://xmlns.com/foaf/0.1/Agent> ;
 #    Data properties
 #################################################################
 
-###  http://lov.linkeddata.es/dataset/lov/vocabs/bmon/limitLabel
+###  https://smartbridgefm.github.io/bmon/limitLabel
 :limitLabel rdf:type owl:DatatypeProperty ;
             rdfs:domain :LimitRange ;
             rdfs:range xsd:string .
 
 
-###  http://lov.linkeddata.es/dataset/lov/vocabs/bmon/maxLimit
+###  https://smartbridgefm.github.io/bmon/maxLimit
 :maxLimit rdf:type owl:DatatypeProperty ;
           rdfs:domain :LimitRange ;
           rdfs:range xsd:double .
 
 
-###  http://lov.linkeddata.es/dataset/lov/vocabs/bmon/minLimit
+###  https://smartbridgefm.github.io/bmon/minLimit
 :minLimit rdf:type owl:DatatypeProperty ;
           rdfs:domain :LimitRange ;
           rdfs:range xsd:double .
 
 
-###  http://lov.linkeddata.es/dataset/lov/vocabs/bmon/offsetX
+###  https://smartbridgefm.github.io/bmon/offsetX
 :offsetX rdf:type owl:DatatypeProperty ;
          rdfs:domain :LocationInEntity ;
          rdfs:range xsd:double .
 
 
-###  http://lov.linkeddata.es/dataset/lov/vocabs/bmon/offsetY
+###  https://smartbridgefm.github.io/bmon/offsetY
 :offsetY rdf:type owl:DatatypeProperty ;
          rdfs:domain :LocationInEntity ;
          rdfs:range xsd:double .
 
 
-###  http://lov.linkeddata.es/dataset/lov/vocabs/bmon/offsetZ
+###  https://smartbridgefm.github.io/bmon/offsetZ
 :offsetZ rdf:type owl:DatatypeProperty ;
          rdfs:domain :LocationInEntity ;
          rdfs:range xsd:double .
 
 
-###  http://lov.linkeddata.es/dataset/lov/vocabs/bmon/userInterfaceAddress
+###  https://smartbridgefm.github.io/bmon/userInterfaceAddress
 :userInterfaceAddress rdf:type owl:DatatypeProperty ;
                       rdfs:domain :MonitoringDeployment ;
                       rdfs:range xsd:anyURI .
@@ -246,310 +254,6 @@ _:genid1 rdf:type <http://xmlns.com/foaf/0.1/Agent> ;
 #################################################################
 #    Classes
 #################################################################
-
-###  http://lov.linkeddata.es/dataset/lov/vocabs/bmon/Acceleration
-:Acceleration rdf:type owl:Class ;
-              rdfs:subClassOf <http://www.w3.org/ns/sosa/ObservableProperty> .
-
-
-###  http://lov.linkeddata.es/dataset/lov/vocabs/bmon/AccelerationSensor
-:AccelerationSensor rdf:type owl:Class ;
-                    rdfs:subClassOf :EntitySensor ,
-                                    [ rdf:type owl:Restriction ;
-                                      owl:onProperty <http://www.w3.org/ns/sosa/observes> ;
-                                      owl:allValuesFrom :Acceleration
-                                    ] .
-
-
-###  http://lov.linkeddata.es/dataset/lov/vocabs/bmon/AirPressure
-:AirPressure rdf:type owl:Class ;
-             rdfs:subClassOf <http://www.w3.org/ns/sosa/ObservableProperty> .
-
-
-###  http://lov.linkeddata.es/dataset/lov/vocabs/bmon/AirPressureSensor
-:AirPressureSensor rdf:type owl:Class ;
-                   rdfs:subClassOf :WeatherSensor ,
-                                   [ rdf:type owl:Restriction ;
-                                     owl:onProperty <http://www.w3.org/ns/sosa/observes> ;
-                                     owl:allValuesFrom :AirPressure
-                                   ] .
-
-
-###  http://lov.linkeddata.es/dataset/lov/vocabs/bmon/AlarmRange
-:AlarmRange rdf:type owl:Class ;
-            rdfs:subClassOf :LimitRange ;
-            rdfs:comment "Value outside of acceptable range" .
-
-
-###  http://lov.linkeddata.es/dataset/lov/vocabs/bmon/Any
-:Any rdf:type owl:Class ;
-     rdfs:subClassOf :HistoryFunctionType .
-
-
-###  http://lov.linkeddata.es/dataset/lov/vocabs/bmon/Avg
-:Avg rdf:type owl:Class ;
-     rdfs:subClassOf :HistoryFunctionType .
-
-
-###  http://lov.linkeddata.es/dataset/lov/vocabs/bmon/Corrosion
-:Corrosion rdf:type owl:Class ;
-           rdfs:subClassOf <http://www.w3.org/ns/sosa/ObservableProperty> .
-
-
-###  http://lov.linkeddata.es/dataset/lov/vocabs/bmon/CorrosionSensor
-:CorrosionSensor rdf:type owl:Class ;
-                 rdfs:subClassOf :StructureSensor ,
-                                 [ rdf:type owl:Restriction ;
-                                   owl:onProperty <http://www.w3.org/ns/sosa/observes> ;
-                                   owl:allValuesFrom :Corrosion
-                                 ] .
-
-
-###  http://lov.linkeddata.es/dataset/lov/vocabs/bmon/DataRequest
-:DataRequest rdf:type owl:Class ;
-             rdfs:comment "Parameters of a request" .
-
-
-###  http://lov.linkeddata.es/dataset/lov/vocabs/bmon/Displacement
-:Displacement rdf:type owl:Class ;
-              rdfs:subClassOf <http://www.w3.org/ns/sosa/ObservableProperty> .
-
-
-###  http://lov.linkeddata.es/dataset/lov/vocabs/bmon/DisplacementSensor
-:DisplacementSensor rdf:type owl:Class ;
-                    rdfs:subClassOf :EntitySensor ,
-                                    [ rdf:type owl:Restriction ;
-                                      owl:onProperty <http://www.w3.org/ns/sosa/observes> ;
-                                      owl:allValuesFrom :Displacement
-                                    ] .
-
-
-###  http://lov.linkeddata.es/dataset/lov/vocabs/bmon/Entity
-:Entity rdf:type owl:Class ;
-        rdfs:comment "Entity that is observed or with respect to whom the location offset is specified" .
-
-
-###  http://lov.linkeddata.es/dataset/lov/vocabs/bmon/EntitySensor
-:EntitySensor rdf:type owl:Class ;
-              rdfs:subClassOf <http://www.w3.org/ns/sosa/Sensor> ;
-              rdfs:comment "Sensor observing a fixed entity" .
-
-
-###  http://lov.linkeddata.es/dataset/lov/vocabs/bmon/FiberStrain
-:FiberStrain rdf:type owl:Class ;
-             rdfs:subClassOf :StrainGauge .
-
-
-###  http://lov.linkeddata.es/dataset/lov/vocabs/bmon/FiberStrainTemperatureCompensated
-:FiberStrainTemperatureCompensated rdf:type owl:Class ;
-                                   rdfs:subClassOf :FiberStrain ,
-                                                   [ rdf:type owl:Restriction ;
-                                                     owl:onProperty :hasCompensatinTemperature ;
-                                                     owl:allValuesFrom :FiberTemperatureSensor
-                                                   ] ,
-                                                   [ rdf:type owl:Restriction ;
-                                                     owl:onProperty :hasFiberStrain ;
-                                                     owl:allValuesFrom :FiberStrain
-                                                   ] .
-
-
-###  http://lov.linkeddata.es/dataset/lov/vocabs/bmon/FiberTemperatureSensor
-:FiberTemperatureSensor rdf:type owl:Class ;
-                        rdfs:subClassOf :TemperatureSensor .
-
-
-###  http://lov.linkeddata.es/dataset/lov/vocabs/bmon/HistoryFunctionType
-:HistoryFunctionType rdf:type owl:Class .
-
-
-###  http://lov.linkeddata.es/dataset/lov/vocabs/bmon/HttpRequest
-:HttpRequest rdf:type owl:Class ;
-             rdfs:subClassOf :DataRequest ;
-             rdfs:comment "Parameters of a request using REST" .
-
-
-###  http://lov.linkeddata.es/dataset/lov/vocabs/bmon/LadderReferencePotentialSensor
-:LadderReferencePotentialSensor rdf:type owl:Class ;
-                                rdfs:subClassOf :ReferencePotentialSensor .
-
-
-###  http://lov.linkeddata.es/dataset/lov/vocabs/bmon/LimitRange
-:LimitRange rdf:type owl:Class .
-
-
-###  http://lov.linkeddata.es/dataset/lov/vocabs/bmon/LocationInEntity
-:LocationInEntity rdf:type owl:Class ;
-                  rdfs:comment "Specifies the location as an offset in the local coordinates of an entity" .
-
-
-###  http://lov.linkeddata.es/dataset/lov/vocabs/bmon/Max
-:Max rdf:type owl:Class ;
-     rdfs:subClassOf :HistoryFunctionType .
-
-
-###  http://lov.linkeddata.es/dataset/lov/vocabs/bmon/Min
-:Min rdf:type owl:Class ;
-     rdfs:subClassOf :HistoryFunctionType .
-
-
-###  http://lov.linkeddata.es/dataset/lov/vocabs/bmon/MonitoringDeployment
-:MonitoringDeployment rdf:type owl:Class ;
-                      rdfs:subClassOf <http://www.w3.org/ns/ssn/Deployment> .
-
-
-###  http://lov.linkeddata.es/dataset/lov/vocabs/bmon/RainAccumulation
-:RainAccumulation rdf:type owl:Class ;
-                  rdfs:subClassOf <http://www.w3.org/ns/sosa/ObservableProperty> .
-
-
-###  http://lov.linkeddata.es/dataset/lov/vocabs/bmon/RainAccumulationSensor
-:RainAccumulationSensor rdf:type owl:Class ;
-                        rdfs:subClassOf :WeatherSensor ,
-                                        [ rdf:type owl:Restriction ;
-                                          owl:onProperty <http://www.w3.org/ns/sosa/observes> ;
-                                          owl:allValuesFrom :RainAccumulation
-                                        ] .
-
-
-###  http://lov.linkeddata.es/dataset/lov/vocabs/bmon/RainDuration
-:RainDuration rdf:type owl:Class ;
-              rdfs:subClassOf <http://www.w3.org/ns/sosa/ObservableProperty> .
-
-
-###  http://lov.linkeddata.es/dataset/lov/vocabs/bmon/RainDurationSensor
-:RainDurationSensor rdf:type owl:Class ;
-                    rdfs:subClassOf :WeatherSensor ,
-                                    [ rdf:type owl:Restriction ;
-                                      owl:onProperty <http://www.w3.org/ns/sosa/observes> ;
-                                      owl:allValuesFrom :RainDuration
-                                    ] .
-
-
-###  http://lov.linkeddata.es/dataset/lov/vocabs/bmon/RainIntensity
-:RainIntensity rdf:type owl:Class ;
-               rdfs:subClassOf <http://www.w3.org/ns/sosa/ObservableProperty> .
-
-
-###  http://lov.linkeddata.es/dataset/lov/vocabs/bmon/RainIntensitySensor
-:RainIntensitySensor rdf:type owl:Class ;
-                     rdfs:subClassOf :WeatherSensor ,
-                                     [ rdf:type owl:Restriction ;
-                                       owl:onProperty <http://www.w3.org/ns/sosa/observes> ;
-                                       owl:allValuesFrom :RainIntensity
-                                     ] .
-
-
-###  http://lov.linkeddata.es/dataset/lov/vocabs/bmon/ReferencePotentialSensor
-:ReferencePotentialSensor rdf:type owl:Class ;
-                          rdfs:subClassOf :CorrosionSensor .
-
-
-###  http://lov.linkeddata.es/dataset/lov/vocabs/bmon/RelativeHumidity
-:RelativeHumidity rdf:type owl:Class ;
-                  rdfs:subClassOf <http://www.w3.org/ns/sosa/ObservableProperty> .
-
-
-###  http://lov.linkeddata.es/dataset/lov/vocabs/bmon/RelativeHumiditySensor
-:RelativeHumiditySensor rdf:type owl:Class ;
-                        rdfs:subClassOf :WeatherSensor ,
-                                        [ rdf:type owl:Restriction ;
-                                          owl:onProperty <http://www.w3.org/ns/sosa/observes> ;
-                                          owl:allValuesFrom :RelativeHumidity
-                                        ] .
-
-
-###  http://lov.linkeddata.es/dataset/lov/vocabs/bmon/SensorSegment
-:SensorSegment rdf:type owl:Class ;
-               rdfs:subClassOf <http://www.w3.org/ns/ssn/System> .
-
-
-###  http://lov.linkeddata.es/dataset/lov/vocabs/bmon/Strain
-:Strain rdf:type owl:Class ;
-        rdfs:subClassOf <http://www.w3.org/ns/sosa/ObservableProperty> .
-
-
-###  http://lov.linkeddata.es/dataset/lov/vocabs/bmon/StrainGauge
-:StrainGauge rdf:type owl:Class ;
-             rdfs:subClassOf :StructureSensor ,
-                             [ rdf:type owl:Restriction ;
-                               owl:onProperty <http://www.w3.org/ns/sosa/observes> ;
-                               owl:allValuesFrom :Strain
-                             ] .
-
-
-###  http://lov.linkeddata.es/dataset/lov/vocabs/bmon/StructureSensor
-:StructureSensor rdf:type owl:Class ;
-                 rdfs:subClassOf :EntitySensor .
-
-
-###  http://lov.linkeddata.es/dataset/lov/vocabs/bmon/Temperature
-:Temperature rdf:type owl:Class ;
-             rdfs:subClassOf <http://www.w3.org/ns/sosa/ObservableProperty> .
-
-
-###  http://lov.linkeddata.es/dataset/lov/vocabs/bmon/TemperatureSensor
-:TemperatureSensor rdf:type owl:Class ;
-                   rdfs:subClassOf :EntitySensor ,
-                                   [ rdf:type owl:Restriction ;
-                                     owl:onProperty <http://www.w3.org/ns/sosa/observes> ;
-                                     owl:allValuesFrom :Temperature
-                                   ] .
-
-
-###  http://lov.linkeddata.es/dataset/lov/vocabs/bmon/Trend
-:Trend rdf:type owl:Class ;
-       rdfs:subClassOf :HistoryFunctionType .
-
-
-###  http://lov.linkeddata.es/dataset/lov/vocabs/bmon/ValueHistory
-:ValueHistory rdf:type owl:Class ;
-              rdfs:subClassOf <http://www.w3.org/ns/sosa/Sample> ;
-              rdfs:comment "History of values" .
-
-
-###  http://lov.linkeddata.es/dataset/lov/vocabs/bmon/WarningRange
-:WarningRange rdf:type owl:Class ;
-              rdfs:subClassOf :LimitRange ;
-              rdfs:comment "Value outside of normal range" .
-
-
-###  http://lov.linkeddata.es/dataset/lov/vocabs/bmon/WeatherSensor
-:WeatherSensor rdf:type owl:Class ;
-               rdfs:subClassOf :EntitySensor .
-
-
-###  http://lov.linkeddata.es/dataset/lov/vocabs/bmon/WeatherStation
-:WeatherStation rdf:type owl:Class ;
-                rdfs:subClassOf <http://www.w3.org/ns/ssn/System> .
-
-
-###  http://lov.linkeddata.es/dataset/lov/vocabs/bmon/WindDirection
-:WindDirection rdf:type owl:Class ;
-               rdfs:subClassOf <http://www.w3.org/ns/sosa/ObservableProperty> .
-
-
-###  http://lov.linkeddata.es/dataset/lov/vocabs/bmon/WindDirectionSensor
-:WindDirectionSensor rdf:type owl:Class ;
-                     rdfs:subClassOf :WeatherSensor ,
-                                     [ rdf:type owl:Restriction ;
-                                       owl:onProperty <http://www.w3.org/ns/sosa/observes> ;
-                                       owl:allValuesFrom :WindDirection
-                                     ] .
-
-
-###  http://lov.linkeddata.es/dataset/lov/vocabs/bmon/WindSpeed
-:WindSpeed rdf:type owl:Class ;
-           rdfs:subClassOf <http://www.w3.org/ns/sosa/ObservableProperty> .
-
-
-###  http://lov.linkeddata.es/dataset/lov/vocabs/bmon/WindSpeedSensor
-:WindSpeedSensor rdf:type owl:Class ;
-                 rdfs:subClassOf :WeatherSensor ,
-                                 [ rdf:type owl:Restriction ;
-                                   owl:onProperty <http://www.w3.org/ns/sosa/observes> ;
-                                   owl:allValuesFrom :WindSpeed
-                                 ] .
-
 
 ###  http://www.w3.org/2001/XMLSchema#DateTime
 xsd:DateTime rdf:type owl:Class .
@@ -571,177 +275,491 @@ xsd:String rdf:type owl:Class .
 owl:Property rdf:type owl:Class .
 
 
+###  http://xmlns.com/foaf/0.1/Person
+<http://xmlns.com/foaf/0.1/Person> rdf:type owl:Class .
+
+
+###  https://smartbridgefm.github.io/bmon/Acceleration
+:Acceleration rdf:type owl:Class ;
+              rdfs:subClassOf <http://www.w3.org/ns/sosa/ObservableProperty> .
+
+
+###  https://smartbridgefm.github.io/bmon/AccelerationSensor
+:AccelerationSensor rdf:type owl:Class ;
+                    rdfs:subClassOf :EntitySensor ,
+                                    [ rdf:type owl:Restriction ;
+                                      owl:onProperty <http://www.w3.org/ns/sosa/observes> ;
+                                      owl:allValuesFrom :Acceleration
+                                    ] .
+
+
+###  https://smartbridgefm.github.io/bmon/AirPressure
+:AirPressure rdf:type owl:Class ;
+             rdfs:subClassOf <http://www.w3.org/ns/sosa/ObservableProperty> .
+
+
+###  https://smartbridgefm.github.io/bmon/AirPressureSensor
+:AirPressureSensor rdf:type owl:Class ;
+                   rdfs:subClassOf :WeatherSensor ,
+                                   [ rdf:type owl:Restriction ;
+                                     owl:onProperty <http://www.w3.org/ns/sosa/observes> ;
+                                     owl:allValuesFrom :AirPressure
+                                   ] .
+
+
+###  https://smartbridgefm.github.io/bmon/AlarmRange
+:AlarmRange rdf:type owl:Class ;
+            rdfs:subClassOf :LimitRange ;
+            rdfs:comment "Value outside of acceptable range" .
+
+
+###  https://smartbridgefm.github.io/bmon/Any
+:Any rdf:type owl:Class ;
+     rdfs:subClassOf :HistoryFunctionType .
+
+
+###  https://smartbridgefm.github.io/bmon/Avg
+:Avg rdf:type owl:Class ;
+     rdfs:subClassOf :HistoryFunctionType .
+
+
+###  https://smartbridgefm.github.io/bmon/Corrosion
+:Corrosion rdf:type owl:Class ;
+           rdfs:subClassOf <http://www.w3.org/ns/sosa/ObservableProperty> .
+
+
+###  https://smartbridgefm.github.io/bmon/CorrosionSensor
+:CorrosionSensor rdf:type owl:Class ;
+                 rdfs:subClassOf :StructureSensor ,
+                                 [ rdf:type owl:Restriction ;
+                                   owl:onProperty <http://www.w3.org/ns/sosa/observes> ;
+                                   owl:allValuesFrom :Corrosion
+                                 ] .
+
+
+###  https://smartbridgefm.github.io/bmon/DataRequest
+:DataRequest rdf:type owl:Class ;
+             rdfs:comment "Parameters of a request" .
+
+
+###  https://smartbridgefm.github.io/bmon/Displacement
+:Displacement rdf:type owl:Class ;
+              rdfs:subClassOf <http://www.w3.org/ns/sosa/ObservableProperty> .
+
+
+###  https://smartbridgefm.github.io/bmon/DisplacementSensor
+:DisplacementSensor rdf:type owl:Class ;
+                    rdfs:subClassOf :EntitySensor ,
+                                    [ rdf:type owl:Restriction ;
+                                      owl:onProperty <http://www.w3.org/ns/sosa/observes> ;
+                                      owl:allValuesFrom :Displacement
+                                    ] .
+
+
+###  https://smartbridgefm.github.io/bmon/Entity
+:Entity rdf:type owl:Class ;
+        rdfs:comment "Entity that is observed or with respect to whom the location offset is specified" .
+
+
+###  https://smartbridgefm.github.io/bmon/EntitySensor
+:EntitySensor rdf:type owl:Class ;
+              rdfs:subClassOf <http://www.w3.org/ns/sosa/Sensor> ;
+              rdfs:comment "Sensor observing a fixed entity" .
+
+
+###  https://smartbridgefm.github.io/bmon/FiberStrain
+:FiberStrain rdf:type owl:Class ;
+             rdfs:subClassOf :StrainGauge .
+
+
+###  https://smartbridgefm.github.io/bmon/FiberStrainTemperatureCompensated
+:FiberStrainTemperatureCompensated rdf:type owl:Class ;
+                                   rdfs:subClassOf :FiberStrain ,
+                                                   [ rdf:type owl:Restriction ;
+                                                     owl:onProperty :hasCompensatinTemperature ;
+                                                     owl:allValuesFrom :FiberTemperatureSensor
+                                                   ] ,
+                                                   [ rdf:type owl:Restriction ;
+                                                     owl:onProperty :hasFiberStrain ;
+                                                     owl:allValuesFrom :FiberStrain
+                                                   ] .
+
+
+###  https://smartbridgefm.github.io/bmon/FiberTemperatureSensor
+:FiberTemperatureSensor rdf:type owl:Class ;
+                        rdfs:subClassOf :TemperatureSensor .
+
+
+###  https://smartbridgefm.github.io/bmon/HistoryFunctionType
+:HistoryFunctionType rdf:type owl:Class .
+
+
+###  https://smartbridgefm.github.io/bmon/HttpRequest
+:HttpRequest rdf:type owl:Class ;
+             rdfs:subClassOf :DataRequest ;
+             rdfs:comment "Parameters of a request using REST" .
+
+
+###  https://smartbridgefm.github.io/bmon/LadderReferencePotentialSensor
+:LadderReferencePotentialSensor rdf:type owl:Class ;
+                                rdfs:subClassOf :ReferencePotentialSensor .
+
+
+###  https://smartbridgefm.github.io/bmon/LimitRange
+:LimitRange rdf:type owl:Class .
+
+
+###  https://smartbridgefm.github.io/bmon/LocationInEntity
+:LocationInEntity rdf:type owl:Class ;
+                  rdfs:comment "Specifies the location as an offset in the local coordinates of an entity" .
+
+
+###  https://smartbridgefm.github.io/bmon/Max
+:Max rdf:type owl:Class ;
+     rdfs:subClassOf :HistoryFunctionType .
+
+
+###  https://smartbridgefm.github.io/bmon/Min
+:Min rdf:type owl:Class ;
+     rdfs:subClassOf :HistoryFunctionType .
+
+
+###  https://smartbridgefm.github.io/bmon/MonitoringDeployment
+:MonitoringDeployment rdf:type owl:Class ;
+                      rdfs:subClassOf <http://www.w3.org/ns/ssn/Deployment> .
+
+
+###  https://smartbridgefm.github.io/bmon/RainAccumulation
+:RainAccumulation rdf:type owl:Class ;
+                  rdfs:subClassOf <http://www.w3.org/ns/sosa/ObservableProperty> .
+
+
+###  https://smartbridgefm.github.io/bmon/RainAccumulationSensor
+:RainAccumulationSensor rdf:type owl:Class ;
+                        rdfs:subClassOf :WeatherSensor ,
+                                        [ rdf:type owl:Restriction ;
+                                          owl:onProperty <http://www.w3.org/ns/sosa/observes> ;
+                                          owl:allValuesFrom :RainAccumulation
+                                        ] .
+
+
+###  https://smartbridgefm.github.io/bmon/RainDuration
+:RainDuration rdf:type owl:Class ;
+              rdfs:subClassOf <http://www.w3.org/ns/sosa/ObservableProperty> .
+
+
+###  https://smartbridgefm.github.io/bmon/RainDurationSensor
+:RainDurationSensor rdf:type owl:Class ;
+                    rdfs:subClassOf :WeatherSensor ,
+                                    [ rdf:type owl:Restriction ;
+                                      owl:onProperty <http://www.w3.org/ns/sosa/observes> ;
+                                      owl:allValuesFrom :RainDuration
+                                    ] .
+
+
+###  https://smartbridgefm.github.io/bmon/RainIntensity
+:RainIntensity rdf:type owl:Class ;
+               rdfs:subClassOf <http://www.w3.org/ns/sosa/ObservableProperty> .
+
+
+###  https://smartbridgefm.github.io/bmon/RainIntensitySensor
+:RainIntensitySensor rdf:type owl:Class ;
+                     rdfs:subClassOf :WeatherSensor ,
+                                     [ rdf:type owl:Restriction ;
+                                       owl:onProperty <http://www.w3.org/ns/sosa/observes> ;
+                                       owl:allValuesFrom :RainIntensity
+                                     ] .
+
+
+###  https://smartbridgefm.github.io/bmon/ReferencePotentialSensor
+:ReferencePotentialSensor rdf:type owl:Class ;
+                          rdfs:subClassOf :CorrosionSensor .
+
+
+###  https://smartbridgefm.github.io/bmon/RelativeHumidity
+:RelativeHumidity rdf:type owl:Class ;
+                  rdfs:subClassOf <http://www.w3.org/ns/sosa/ObservableProperty> .
+
+
+###  https://smartbridgefm.github.io/bmon/RelativeHumiditySensor
+:RelativeHumiditySensor rdf:type owl:Class ;
+                        rdfs:subClassOf :WeatherSensor ,
+                                        [ rdf:type owl:Restriction ;
+                                          owl:onProperty <http://www.w3.org/ns/sosa/observes> ;
+                                          owl:allValuesFrom :RelativeHumidity
+                                        ] .
+
+
+###  https://smartbridgefm.github.io/bmon/SensorSegment
+:SensorSegment rdf:type owl:Class ;
+               rdfs:subClassOf <http://www.w3.org/ns/ssn/System> .
+
+
+###  https://smartbridgefm.github.io/bmon/Strain
+:Strain rdf:type owl:Class ;
+        rdfs:subClassOf <http://www.w3.org/ns/sosa/ObservableProperty> .
+
+
+###  https://smartbridgefm.github.io/bmon/StrainGauge
+:StrainGauge rdf:type owl:Class ;
+             rdfs:subClassOf :StructureSensor ,
+                             [ rdf:type owl:Restriction ;
+                               owl:onProperty <http://www.w3.org/ns/sosa/observes> ;
+                               owl:allValuesFrom :Strain
+                             ] .
+
+
+###  https://smartbridgefm.github.io/bmon/StructureSensor
+:StructureSensor rdf:type owl:Class ;
+                 rdfs:subClassOf :EntitySensor .
+
+
+###  https://smartbridgefm.github.io/bmon/Temperature
+:Temperature rdf:type owl:Class ;
+             rdfs:subClassOf <http://www.w3.org/ns/sosa/ObservableProperty> .
+
+
+###  https://smartbridgefm.github.io/bmon/TemperatureSensor
+:TemperatureSensor rdf:type owl:Class ;
+                   rdfs:subClassOf :EntitySensor ,
+                                   [ rdf:type owl:Restriction ;
+                                     owl:onProperty <http://www.w3.org/ns/sosa/observes> ;
+                                     owl:allValuesFrom :Temperature
+                                   ] .
+
+
+###  https://smartbridgefm.github.io/bmon/Trend
+:Trend rdf:type owl:Class ;
+       rdfs:subClassOf :HistoryFunctionType .
+
+
+###  https://smartbridgefm.github.io/bmon/ValueHistory
+:ValueHistory rdf:type owl:Class ;
+              rdfs:subClassOf <http://www.w3.org/ns/sosa/Sample> ;
+              rdfs:comment "History of values" .
+
+
+###  https://smartbridgefm.github.io/bmon/WarningRange
+:WarningRange rdf:type owl:Class ;
+              rdfs:subClassOf :LimitRange ;
+              rdfs:comment "Value outside of normal range" .
+
+
+###  https://smartbridgefm.github.io/bmon/WeatherSensor
+:WeatherSensor rdf:type owl:Class ;
+               rdfs:subClassOf :EntitySensor .
+
+
+###  https://smartbridgefm.github.io/bmon/WeatherStation
+:WeatherStation rdf:type owl:Class ;
+                rdfs:subClassOf <http://www.w3.org/ns/ssn/System> .
+
+
+###  https://smartbridgefm.github.io/bmon/WindDirection
+:WindDirection rdf:type owl:Class ;
+               rdfs:subClassOf <http://www.w3.org/ns/sosa/ObservableProperty> .
+
+
+###  https://smartbridgefm.github.io/bmon/WindDirectionSensor
+:WindDirectionSensor rdf:type owl:Class ;
+                     rdfs:subClassOf :WeatherSensor ,
+                                     [ rdf:type owl:Restriction ;
+                                       owl:onProperty <http://www.w3.org/ns/sosa/observes> ;
+                                       owl:allValuesFrom :WindDirection
+                                     ] .
+
+
+###  https://smartbridgefm.github.io/bmon/WindSpeed
+:WindSpeed rdf:type owl:Class ;
+           rdfs:subClassOf <http://www.w3.org/ns/sosa/ObservableProperty> .
+
+
+###  https://smartbridgefm.github.io/bmon/WindSpeedSensor
+:WindSpeedSensor rdf:type owl:Class ;
+                 rdfs:subClassOf :WeatherSensor ,
+                                 [ rdf:type owl:Restriction ;
+                                   owl:onProperty <http://www.w3.org/ns/sosa/observes> ;
+                                   owl:allValuesFrom :WindSpeed
+                                 ] .
+
+
 #################################################################
 #    Individuals
 #################################################################
 
-###  http://lov.linkeddata.es/dataset/lov/vocabs/bmon/callAddress
+###  https://smartbridgefm.github.io/bmon/callAddress
 :callAddress rdf:type owl:NamedIndividual ,
                       owl:Property .
 
 
-###  http://lov.linkeddata.es/dataset/lov/vocabs/bmon/channel
+###  https://smartbridgefm.github.io/bmon/channel
 :channel rdf:type owl:NamedIndividual ,
                   owl:Property .
 
 
-###  http://lov.linkeddata.es/dataset/lov/vocabs/bmon/dataInterface
+###  https://smartbridgefm.github.io/bmon/dataInterface
 :dataInterface rdf:type owl:NamedIndividual ,
                         owl:Property .
 
 
-###  http://lov.linkeddata.es/dataset/lov/vocabs/bmon/hasAccelerationX
+###  https://smartbridgefm.github.io/bmon/hasAccelerationX
 :hasAccelerationX rdf:type owl:NamedIndividual ,
                            owl:Property .
 
 
-###  http://lov.linkeddata.es/dataset/lov/vocabs/bmon/hasAccelerationY
+###  https://smartbridgefm.github.io/bmon/hasAccelerationY
 :hasAccelerationY rdf:type owl:NamedIndividual ,
                            owl:Property .
 
 
-###  http://lov.linkeddata.es/dataset/lov/vocabs/bmon/hasAccelerationZ
+###  https://smartbridgefm.github.io/bmon/hasAccelerationZ
 :hasAccelerationZ rdf:type owl:NamedIndividual ,
                            owl:Property .
 
 
-###  http://lov.linkeddata.es/dataset/lov/vocabs/bmon/hasBasicAcceleration
+###  https://smartbridgefm.github.io/bmon/hasBasicAcceleration
 :hasBasicAcceleration rdf:type owl:NamedIndividual ,
                                owl:Property .
 
 
-###  http://lov.linkeddata.es/dataset/lov/vocabs/bmon/hasCompassAcceleration
+###  https://smartbridgefm.github.io/bmon/hasCompassAcceleration
 :hasCompassAcceleration rdf:type owl:NamedIndividual ,
                                  owl:Property .
 
 
-###  http://lov.linkeddata.es/dataset/lov/vocabs/bmon/hasCompensatingTemperature
+###  https://smartbridgefm.github.io/bmon/hasCompensatingTemperature
 :hasCompensatingTemperature rdf:type owl:NamedIndividual ,
                                      owl:Property .
 
 
-###  http://lov.linkeddata.es/dataset/lov/vocabs/bmon/hasFiberStrain
+###  https://smartbridgefm.github.io/bmon/hasFiberStrain
 :hasFiberStrain rdf:type owl:NamedIndividual ,
                          owl:Property .
 
 
-###  http://lov.linkeddata.es/dataset/lov/vocabs/bmon/hasGyroscopicAcceleration
+###  https://smartbridgefm.github.io/bmon/hasGyroscopicAcceleration
 :hasGyroscopicAcceleration rdf:type owl:NamedIndividual ,
                                     owl:Property .
 
 
-###  http://lov.linkeddata.es/dataset/lov/vocabs/bmon/httpApiKey
+###  https://smartbridgefm.github.io/bmon/httpApiKey
 :httpApiKey rdf:type owl:NamedIndividual ,
                      owl:Property .
 
 
-###  http://lov.linkeddata.es/dataset/lov/vocabs/bmon/httpHeader
+###  https://smartbridgefm.github.io/bmon/httpHeader
 :httpHeader rdf:type owl:NamedIndividual ,
                      owl:Property .
 
 
-###  http://lov.linkeddata.es/dataset/lov/vocabs/bmon/httpMethod
+###  https://smartbridgefm.github.io/bmon/httpMethod
 :httpMethod rdf:type owl:NamedIndividual ,
                      owl:Property .
 
 
-###  http://lov.linkeddata.es/dataset/lov/vocabs/bmon/httpRequestBody
+###  https://smartbridgefm.github.io/bmon/httpRequestBody
 :httpRequestBody rdf:type owl:NamedIndividual ,
                           owl:Property .
 
 
-###  http://lov.linkeddata.es/dataset/lov/vocabs/bmon/limitLabel
+###  https://smartbridgefm.github.io/bmon/limitLabel
 :limitLabel rdf:type owl:NamedIndividual ,
                      owl:Property .
 
 
-###  http://lov.linkeddata.es/dataset/lov/vocabs/bmon/limits
+###  https://smartbridgefm.github.io/bmon/limits
 :limits rdf:type owl:NamedIndividual ,
                  owl:Property .
 
 
-###  http://lov.linkeddata.es/dataset/lov/vocabs/bmon/locatedAt
+###  https://smartbridgefm.github.io/bmon/locatedAt
 :locatedAt rdf:type owl:NamedIndividual ,
                     owl:Property .
 
 
-###  http://lov.linkeddata.es/dataset/lov/vocabs/bmon/locationEntity
+###  https://smartbridgefm.github.io/bmon/locationEntity
 :locationEntity rdf:type owl:NamedIndividual ,
                          owl:Property .
 
 
-###  http://lov.linkeddata.es/dataset/lov/vocabs/bmon/maxLimit
+###  https://smartbridgefm.github.io/bmon/maxLimit
 :maxLimit rdf:type owl:NamedIndividual ,
                    owl:Property .
 
 
-###  http://lov.linkeddata.es/dataset/lov/vocabs/bmon/minLimit
+###  https://smartbridgefm.github.io/bmon/minLimit
 :minLimit rdf:type owl:NamedIndividual ,
                    owl:Property .
 
 
-###  http://lov.linkeddata.es/dataset/lov/vocabs/bmon/observedEntity
+###  https://smartbridgefm.github.io/bmon/observedEntity
 :observedEntity rdf:type owl:NamedIndividual ,
                          owl:Property .
 
 
-###  http://lov.linkeddata.es/dataset/lov/vocabs/bmon/offsetX
+###  https://smartbridgefm.github.io/bmon/offsetX
 :offsetX rdf:type owl:NamedIndividual ,
                   owl:Property .
 
 
-###  http://lov.linkeddata.es/dataset/lov/vocabs/bmon/offsetY
+###  https://smartbridgefm.github.io/bmon/offsetY
 :offsetY rdf:type owl:NamedIndividual ,
                   owl:Property .
 
 
-###  http://lov.linkeddata.es/dataset/lov/vocabs/bmon/offsetZ
+###  https://smartbridgefm.github.io/bmon/offsetZ
 :offsetZ rdf:type owl:NamedIndividual ,
                   owl:Property .
 
 
-###  http://lov.linkeddata.es/dataset/lov/vocabs/bmon/segment
+###  https://smartbridgefm.github.io/bmon/segment
 :segment rdf:type owl:NamedIndividual ,
                   owl:Property .
 
 
-###  http://lov.linkeddata.es/dataset/lov/vocabs/bmon/unit
+###  https://smartbridgefm.github.io/bmon/unit
 :unit rdf:type owl:NamedIndividual ,
                owl:Property .
 
 
-###  http://lov.linkeddata.es/dataset/lov/vocabs/bmon/userInterfaceAddress
+###  https://smartbridgefm.github.io/bmon/userInterfaceAddress
 :userInterfaceAddress rdf:type owl:NamedIndividual ,
                                owl:Property .
 
 
-###  http://lov.linkeddata.es/dataset/lov/vocabs/bmon/valueFunction
+###  https://smartbridgefm.github.io/bmon/valueFunction
 :valueFunction rdf:type owl:NamedIndividual ,
                         owl:Property .
 
 
-###  http://lov.linkeddata.es/dataset/lov/vocabs/bmon/valuesCount
+###  https://smartbridgefm.github.io/bmon/valuesCount
 :valuesCount rdf:type owl:NamedIndividual ,
                       owl:Property .
 
 
-###  http://lov.linkeddata.es/dataset/lov/vocabs/bmon/valuesFrom
+###  https://smartbridgefm.github.io/bmon/valuesFrom
 :valuesFrom rdf:type owl:NamedIndividual ,
                      owl:Property .
 
 
-###  http://lov.linkeddata.es/dataset/lov/vocabs/bmon/valuesStep
+###  https://smartbridgefm.github.io/bmon/valuesStep
 :valuesStep rdf:type owl:NamedIndividual ,
                      owl:Property .
 
 
-###  http://lov.linkeddata.es/dataset/lov/vocabs/bmon/valuesTo
+###  https://smartbridgefm.github.io/bmon/valuesTo
 :valuesTo rdf:type owl:NamedIndividual ,
                    owl:Property .
 
 
-_:genid16 rdf:type <http://xmlns.com/foaf/0.1/Agent> ;
+_:genid18 rdf:type <http://xmlns.com/foaf/0.1/Agent> ;
           <http://xmlns.com/foaf/0.1/name> "SmartBridgeFM project"@en .
+
+_:genid19 rdf:type <http://xmlns.com/foaf/0.1/Person> ;
+           <http://xmlns.com/foaf/0.1/name> "Seppo Törmä" .
+
+_:genid20 rdf:type <http://xmlns.com/foaf/0.1/Person> ;
+           <http://xmlns.com/foaf/0.1/name> "Markku Kiviniemi" .
 
 #################################################################
 #    Annotations

@@ -1,0 +1,671 @@
+<https://smartbridgefm.github.io/bmon/> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Ontology> .
+<https://smartbridgefm.github.io/bmon/> <http://www.w3.org/2002/07/owl#imports> <http://www.w3.org/ns/sosa/> .
+<https://smartbridgefm.github.io/bmon/> <http://www.w3.org/2002/07/owl#imports> <http://www.w3.org/ns/ssn/> .
+<https://smartbridgefm.github.io/bmon/> <http://purl.org/dc/terms/constributor> _:genid1 .
+_:genid1 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://xmlns.com/foaf/0.1/Person> .
+<http://xmlns.com/foaf/0.1/Person> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:genid1 <http://xmlns.com/foaf/0.1/name> "Markku Kiviniemi" .
+<https://smartbridgefm.github.io/bmon/> <http://purl.org/dc/terms/created> "2018-08-31"^^<http://www.w3.org/2001/XMLSchema#date> .
+<https://smartbridgefm.github.io/bmon/> <http://purl.org/dc/terms/creator> _:genid2 .
+_:genid2 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://xmlns.com/foaf/0.1/Agent> .
+_:genid2 <http://xmlns.com/foaf/0.1/name> "SmartBridgeFM project"@en .
+<https://smartbridgefm.github.io/bmon/> <http://purl.org/dc/terms/creator> _:genid3 .
+_:genid3 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://xmlns.com/foaf/0.1/Person> .
+_:genid3 <http://xmlns.com/foaf/0.1/name> "Seppo Törmä" .
+<https://smartbridgefm.github.io/bmon/> <http://purl.org/dc/terms/description> "Ontology for bridge monitoring that extends SSN/SOSA with bridge specific concepts."@en .
+<https://smartbridgefm.github.io/bmon/> <http://purl.org/dc/terms/license> <http://www.opengeospatial.org/ogc/Software> .
+<https://smartbridgefm.github.io/bmon/> <http://purl.org/dc/terms/license> <http://www.w3.org/Consortium/Legal/2015/copyright-software-and-document> .
+<https://smartbridgefm.github.io/bmon/> <http://purl.org/dc/terms/title> "Bridge Monitoring Ontology"@en .
+<https://smartbridgefm.github.io/bmon/> <http://purl.org/vocab/vann/preferredNamespacePrefix> "bmon" .
+<https://smartbridgefm.github.io/bmon/> <http://purl.org/vocab/vann/preferredNamespaceUri> "https://smartbridgefm.github.io/bmon/" .
+# 
+# 
+# #################################################################
+# #
+# #    Annotation properties
+# #
+# #################################################################
+# 
+# 
+# https://smartbridgefm.github.io/bmon/httpMethod
+<https://smartbridgefm.github.io/bmon/httpMethod> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+<https://smartbridgefm.github.io/bmon/httpMethod> <http://www.w3.org/2000/01/rdf-schema#domain> <https://smartbridgefm.github.io/bmon/DataRequest> .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Object Properties
+# #
+# #################################################################
+# 
+# 
+# https://smartbridgefm.github.io/bmon/callAddress
+<https://smartbridgefm.github.io/bmon/callAddress> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://smartbridgefm.github.io/bmon/callAddress> <http://www.w3.org/2000/01/rdf-schema#domain> <https://smartbridgefm.github.io/bmon/DataRequest> .
+<https://smartbridgefm.github.io/bmon/callAddress> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#String> .
+<http://www.w3.org/2001/XMLSchema#String> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# https://smartbridgefm.github.io/bmon/channel
+<https://smartbridgefm.github.io/bmon/channel> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://smartbridgefm.github.io/bmon/channel> <http://www.w3.org/2000/01/rdf-schema#domain> <https://smartbridgefm.github.io/bmon/MonitoringDeployment> .
+<https://smartbridgefm.github.io/bmon/channel> <http://www.w3.org/2000/01/rdf-schema#range> <https://smartbridgefm.github.io/bmon/EntitySensor> .
+# 
+# https://smartbridgefm.github.io/bmon/dataInterface
+<https://smartbridgefm.github.io/bmon/dataInterface> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://smartbridgefm.github.io/bmon/dataInterface> <http://www.w3.org/2000/01/rdf-schema#domain> <https://smartbridgefm.github.io/bmon/MonitoringDeployment> .
+<https://smartbridgefm.github.io/bmon/dataInterface> <http://www.w3.org/2000/01/rdf-schema#range> <https://smartbridgefm.github.io/bmon/DataRequest> .
+# 
+# https://smartbridgefm.github.io/bmon/hasAccelerationX
+<https://smartbridgefm.github.io/bmon/hasAccelerationX> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://smartbridgefm.github.io/bmon/hasAccelerationX> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/ns/ssn/hasSubSystem> .
+<https://smartbridgefm.github.io/bmon/hasAccelerationX> <http://www.w3.org/2000/01/rdf-schema#domain> <https://smartbridgefm.github.io/bmon/AccelerationSensor> .
+<https://smartbridgefm.github.io/bmon/hasAccelerationX> <http://www.w3.org/2000/01/rdf-schema#range> <https://smartbridgefm.github.io/bmon/AccelerationSensor> .
+# 
+# https://smartbridgefm.github.io/bmon/hasAccelerationY
+<https://smartbridgefm.github.io/bmon/hasAccelerationY> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://smartbridgefm.github.io/bmon/hasAccelerationY> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/ns/ssn/hasSubSystem> .
+<https://smartbridgefm.github.io/bmon/hasAccelerationY> <http://www.w3.org/2000/01/rdf-schema#domain> <https://smartbridgefm.github.io/bmon/AccelerationSensor> .
+<https://smartbridgefm.github.io/bmon/hasAccelerationY> <http://www.w3.org/2000/01/rdf-schema#range> <https://smartbridgefm.github.io/bmon/AccelerationSensor> .
+# 
+# https://smartbridgefm.github.io/bmon/hasAccelerationZ
+<https://smartbridgefm.github.io/bmon/hasAccelerationZ> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://smartbridgefm.github.io/bmon/hasAccelerationZ> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/ns/ssn/hasSubSystem> .
+<https://smartbridgefm.github.io/bmon/hasAccelerationZ> <http://www.w3.org/2000/01/rdf-schema#domain> <https://smartbridgefm.github.io/bmon/AccelerationSensor> .
+<https://smartbridgefm.github.io/bmon/hasAccelerationZ> <http://www.w3.org/2000/01/rdf-schema#range> <https://smartbridgefm.github.io/bmon/AccelerationSensor> .
+# 
+# https://smartbridgefm.github.io/bmon/hasBasicAcceleration
+<https://smartbridgefm.github.io/bmon/hasBasicAcceleration> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://smartbridgefm.github.io/bmon/hasBasicAcceleration> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/ns/ssn/hasSubSystem> .
+<https://smartbridgefm.github.io/bmon/hasBasicAcceleration> <http://www.w3.org/2000/01/rdf-schema#domain> <https://smartbridgefm.github.io/bmon/AccelerationSensor> .
+<https://smartbridgefm.github.io/bmon/hasBasicAcceleration> <http://www.w3.org/2000/01/rdf-schema#range> <https://smartbridgefm.github.io/bmon/AccelerationSensor> .
+# 
+# https://smartbridgefm.github.io/bmon/hasCompassAcceleration
+<https://smartbridgefm.github.io/bmon/hasCompassAcceleration> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://smartbridgefm.github.io/bmon/hasCompassAcceleration> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/ns/ssn/hasSubSystem> .
+<https://smartbridgefm.github.io/bmon/hasCompassAcceleration> <http://www.w3.org/2000/01/rdf-schema#domain> <https://smartbridgefm.github.io/bmon/AccelerationSensor> .
+<https://smartbridgefm.github.io/bmon/hasCompassAcceleration> <http://www.w3.org/2000/01/rdf-schema#range> <https://smartbridgefm.github.io/bmon/AccelerationSensor> .
+# 
+# https://smartbridgefm.github.io/bmon/hasCompensatinTemperature
+<https://smartbridgefm.github.io/bmon/hasCompensatinTemperature> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+# 
+# https://smartbridgefm.github.io/bmon/hasCompensatingTemperature
+<https://smartbridgefm.github.io/bmon/hasCompensatingTemperature> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://smartbridgefm.github.io/bmon/hasCompensatingTemperature> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/ns/ssn/hasSubSystem> .
+<https://smartbridgefm.github.io/bmon/hasCompensatingTemperature> <http://www.w3.org/2000/01/rdf-schema#domain> <https://smartbridgefm.github.io/bmon/FiberStrainTemperatureCompensated> .
+<https://smartbridgefm.github.io/bmon/hasCompensatingTemperature> <http://www.w3.org/2000/01/rdf-schema#range> <https://smartbridgefm.github.io/bmon/TemperatureSensor> .
+# 
+# https://smartbridgefm.github.io/bmon/hasFiberStrain
+<https://smartbridgefm.github.io/bmon/hasFiberStrain> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://smartbridgefm.github.io/bmon/hasFiberStrain> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/ns/ssn/hasSubSystem> .
+<https://smartbridgefm.github.io/bmon/hasFiberStrain> <http://www.w3.org/2000/01/rdf-schema#domain> <https://smartbridgefm.github.io/bmon/FiberStrainTemperatureCompensated> .
+<https://smartbridgefm.github.io/bmon/hasFiberStrain> <http://www.w3.org/2000/01/rdf-schema#range> <https://smartbridgefm.github.io/bmon/FiberStrain> .
+# 
+# https://smartbridgefm.github.io/bmon/hasGyroscopicAcceleration
+<https://smartbridgefm.github.io/bmon/hasGyroscopicAcceleration> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://smartbridgefm.github.io/bmon/hasGyroscopicAcceleration> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/ns/ssn/hasSubSystem> .
+<https://smartbridgefm.github.io/bmon/hasGyroscopicAcceleration> <http://www.w3.org/2000/01/rdf-schema#domain> <https://smartbridgefm.github.io/bmon/AccelerationSensor> .
+<https://smartbridgefm.github.io/bmon/hasGyroscopicAcceleration> <http://www.w3.org/2000/01/rdf-schema#range> <https://smartbridgefm.github.io/bmon/AccelerationSensor> .
+# 
+# https://smartbridgefm.github.io/bmon/httpApiKey
+<https://smartbridgefm.github.io/bmon/httpApiKey> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://smartbridgefm.github.io/bmon/httpApiKey> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <https://smartbridgefm.github.io/bmon/httpHeader> .
+<https://smartbridgefm.github.io/bmon/httpHeader> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://smartbridgefm.github.io/bmon/httpApiKey> <http://www.w3.org/2000/01/rdf-schema#domain> <https://smartbridgefm.github.io/bmon/HttpRequest> .
+<https://smartbridgefm.github.io/bmon/httpApiKey> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#String> .
+# 
+# https://smartbridgefm.github.io/bmon/httpHeader
+<https://smartbridgefm.github.io/bmon/httpHeader> <http://www.w3.org/2000/01/rdf-schema#domain> <https://smartbridgefm.github.io/bmon/HttpRequest> .
+<https://smartbridgefm.github.io/bmon/httpHeader> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#String> .
+# 
+# https://smartbridgefm.github.io/bmon/httpRequestBody
+<https://smartbridgefm.github.io/bmon/httpRequestBody> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://smartbridgefm.github.io/bmon/httpRequestBody> <http://www.w3.org/2000/01/rdf-schema#domain> <https://smartbridgefm.github.io/bmon/HttpRequest> .
+<https://smartbridgefm.github.io/bmon/httpRequestBody> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#String> .
+# 
+# https://smartbridgefm.github.io/bmon/limits
+<https://smartbridgefm.github.io/bmon/limits> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://smartbridgefm.github.io/bmon/limits> <http://www.w3.org/2000/01/rdf-schema#domain> <https://smartbridgefm.github.io/bmon/EntitySensor> .
+<https://smartbridgefm.github.io/bmon/limits> <http://www.w3.org/2000/01/rdf-schema#range> <https://smartbridgefm.github.io/bmon/LimitRange> .
+# 
+# https://smartbridgefm.github.io/bmon/locatedAt
+<https://smartbridgefm.github.io/bmon/locatedAt> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://smartbridgefm.github.io/bmon/locatedAt> <http://www.w3.org/2000/01/rdf-schema#domain> <https://smartbridgefm.github.io/bmon/EntitySensor> .
+<https://smartbridgefm.github.io/bmon/locatedAt> <http://www.w3.org/2000/01/rdf-schema#range> <https://smartbridgefm.github.io/bmon/LocationInEntity> .
+# 
+# https://smartbridgefm.github.io/bmon/locationEntity
+<https://smartbridgefm.github.io/bmon/locationEntity> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://smartbridgefm.github.io/bmon/locationEntity> <http://www.w3.org/2000/01/rdf-schema#domain> <https://smartbridgefm.github.io/bmon/LocationInEntity> .
+<https://smartbridgefm.github.io/bmon/locationEntity> <http://www.w3.org/2000/01/rdf-schema#range> <https://smartbridgefm.github.io/bmon/Entity> .
+# 
+# https://smartbridgefm.github.io/bmon/observedEntity
+<https://smartbridgefm.github.io/bmon/observedEntity> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://smartbridgefm.github.io/bmon/observedEntity> <http://www.w3.org/2000/01/rdf-schema#domain> <https://smartbridgefm.github.io/bmon/EntitySensor> .
+<https://smartbridgefm.github.io/bmon/observedEntity> <http://www.w3.org/2000/01/rdf-schema#range> <https://smartbridgefm.github.io/bmon/Entity> .
+# 
+# https://smartbridgefm.github.io/bmon/segment
+<https://smartbridgefm.github.io/bmon/segment> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://smartbridgefm.github.io/bmon/segment> <http://www.w3.org/2000/01/rdf-schema#domain> <https://smartbridgefm.github.io/bmon/MonitoringDeployment> .
+<https://smartbridgefm.github.io/bmon/segment> <http://www.w3.org/2000/01/rdf-schema#range> <https://smartbridgefm.github.io/bmon/SensorSegment> .
+# 
+# https://smartbridgefm.github.io/bmon/unit
+<https://smartbridgefm.github.io/bmon/unit> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://smartbridgefm.github.io/bmon/unit> <http://www.w3.org/2000/01/rdf-schema#domain> <https://smartbridgefm.github.io/bmon/EntitySensor> .
+<https://smartbridgefm.github.io/bmon/unit> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#String> .
+# 
+# https://smartbridgefm.github.io/bmon/valueFunction
+<https://smartbridgefm.github.io/bmon/valueFunction> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://smartbridgefm.github.io/bmon/valueFunction> <http://www.w3.org/2000/01/rdf-schema#domain> <https://smartbridgefm.github.io/bmon/ValueHistory> .
+<https://smartbridgefm.github.io/bmon/valueFunction> <http://www.w3.org/2000/01/rdf-schema#range> <https://smartbridgefm.github.io/bmon/HistoryFunctionType> .
+# 
+# https://smartbridgefm.github.io/bmon/valuesCount
+<https://smartbridgefm.github.io/bmon/valuesCount> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://smartbridgefm.github.io/bmon/valuesCount> <http://www.w3.org/2000/01/rdf-schema#domain> <https://smartbridgefm.github.io/bmon/ValueHistory> .
+<https://smartbridgefm.github.io/bmon/valuesCount> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#Number> .
+<http://www.w3.org/2001/XMLSchema#Number> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# https://smartbridgefm.github.io/bmon/valuesFrom
+<https://smartbridgefm.github.io/bmon/valuesFrom> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://smartbridgefm.github.io/bmon/valuesFrom> <http://www.w3.org/2000/01/rdf-schema#domain> <https://smartbridgefm.github.io/bmon/ValueHistory> .
+<https://smartbridgefm.github.io/bmon/valuesFrom> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#DateTime> .
+<http://www.w3.org/2001/XMLSchema#DateTime> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# https://smartbridgefm.github.io/bmon/valuesStep
+<https://smartbridgefm.github.io/bmon/valuesStep> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://smartbridgefm.github.io/bmon/valuesStep> <http://www.w3.org/2000/01/rdf-schema#domain> <https://smartbridgefm.github.io/bmon/ValueHistory> .
+<https://smartbridgefm.github.io/bmon/valuesStep> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#Duration> .
+<http://www.w3.org/2001/XMLSchema#Duration> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# https://smartbridgefm.github.io/bmon/valuesTo
+<https://smartbridgefm.github.io/bmon/valuesTo> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://smartbridgefm.github.io/bmon/valuesTo> <http://www.w3.org/2000/01/rdf-schema#domain> <https://smartbridgefm.github.io/bmon/ValueHistory> .
+<https://smartbridgefm.github.io/bmon/valuesTo> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#DateTime> .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Data properties
+# #
+# #################################################################
+# 
+# 
+# https://smartbridgefm.github.io/bmon/limitLabel
+<https://smartbridgefm.github.io/bmon/limitLabel> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://smartbridgefm.github.io/bmon/limitLabel> <http://www.w3.org/2000/01/rdf-schema#domain> <https://smartbridgefm.github.io/bmon/LimitRange> .
+<https://smartbridgefm.github.io/bmon/limitLabel> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+# 
+# https://smartbridgefm.github.io/bmon/maxLimit
+<https://smartbridgefm.github.io/bmon/maxLimit> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://smartbridgefm.github.io/bmon/maxLimit> <http://www.w3.org/2000/01/rdf-schema#domain> <https://smartbridgefm.github.io/bmon/LimitRange> .
+<https://smartbridgefm.github.io/bmon/maxLimit> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#double> .
+# 
+# https://smartbridgefm.github.io/bmon/minLimit
+<https://smartbridgefm.github.io/bmon/minLimit> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://smartbridgefm.github.io/bmon/minLimit> <http://www.w3.org/2000/01/rdf-schema#domain> <https://smartbridgefm.github.io/bmon/LimitRange> .
+<https://smartbridgefm.github.io/bmon/minLimit> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#double> .
+# 
+# https://smartbridgefm.github.io/bmon/offsetX
+<https://smartbridgefm.github.io/bmon/offsetX> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://smartbridgefm.github.io/bmon/offsetX> <http://www.w3.org/2000/01/rdf-schema#domain> <https://smartbridgefm.github.io/bmon/LocationInEntity> .
+<https://smartbridgefm.github.io/bmon/offsetX> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#double> .
+# 
+# https://smartbridgefm.github.io/bmon/offsetY
+<https://smartbridgefm.github.io/bmon/offsetY> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://smartbridgefm.github.io/bmon/offsetY> <http://www.w3.org/2000/01/rdf-schema#domain> <https://smartbridgefm.github.io/bmon/LocationInEntity> .
+<https://smartbridgefm.github.io/bmon/offsetY> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#double> .
+# 
+# https://smartbridgefm.github.io/bmon/offsetZ
+<https://smartbridgefm.github.io/bmon/offsetZ> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://smartbridgefm.github.io/bmon/offsetZ> <http://www.w3.org/2000/01/rdf-schema#domain> <https://smartbridgefm.github.io/bmon/LocationInEntity> .
+<https://smartbridgefm.github.io/bmon/offsetZ> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#double> .
+# 
+# https://smartbridgefm.github.io/bmon/userInterfaceAddress
+<https://smartbridgefm.github.io/bmon/userInterfaceAddress> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://smartbridgefm.github.io/bmon/userInterfaceAddress> <http://www.w3.org/2000/01/rdf-schema#domain> <https://smartbridgefm.github.io/bmon/MonitoringDeployment> .
+<https://smartbridgefm.github.io/bmon/userInterfaceAddress> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#anyURI> .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Classes
+# #
+# #################################################################
+# 
+# 
+# http://www.w3.org/2001/XMLSchema#DateTime
+# 
+# http://www.w3.org/2001/XMLSchema#Duration
+# 
+# http://www.w3.org/2001/XMLSchema#Number
+# 
+# http://www.w3.org/2001/XMLSchema#String
+# 
+# http://www.w3.org/2002/07/owl#Property
+<http://www.w3.org/2002/07/owl#Property> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# http://xmlns.com/foaf/0.1/Person
+# 
+# https://smartbridgefm.github.io/bmon/Acceleration
+<https://smartbridgefm.github.io/bmon/Acceleration> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://smartbridgefm.github.io/bmon/Acceleration> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/ns/sosa/ObservableProperty> .
+# 
+# https://smartbridgefm.github.io/bmon/AccelerationSensor
+<https://smartbridgefm.github.io/bmon/AccelerationSensor> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://smartbridgefm.github.io/bmon/AccelerationSensor> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://smartbridgefm.github.io/bmon/EntitySensor> .
+<https://smartbridgefm.github.io/bmon/AccelerationSensor> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid4 .
+_:genid4 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid4 <http://www.w3.org/2002/07/owl#onProperty> <http://www.w3.org/ns/sosa/observes> .
+_:genid4 <http://www.w3.org/2002/07/owl#allValuesFrom> <https://smartbridgefm.github.io/bmon/Acceleration> .
+# 
+# https://smartbridgefm.github.io/bmon/AirPressure
+<https://smartbridgefm.github.io/bmon/AirPressure> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://smartbridgefm.github.io/bmon/AirPressure> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/ns/sosa/ObservableProperty> .
+# 
+# https://smartbridgefm.github.io/bmon/AirPressureSensor
+<https://smartbridgefm.github.io/bmon/AirPressureSensor> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://smartbridgefm.github.io/bmon/AirPressureSensor> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://smartbridgefm.github.io/bmon/WeatherSensor> .
+<https://smartbridgefm.github.io/bmon/AirPressureSensor> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid5 .
+_:genid5 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid5 <http://www.w3.org/2002/07/owl#onProperty> <http://www.w3.org/ns/sosa/observes> .
+_:genid5 <http://www.w3.org/2002/07/owl#allValuesFrom> <https://smartbridgefm.github.io/bmon/AirPressure> .
+# 
+# https://smartbridgefm.github.io/bmon/AlarmRange
+<https://smartbridgefm.github.io/bmon/AlarmRange> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://smartbridgefm.github.io/bmon/AlarmRange> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://smartbridgefm.github.io/bmon/LimitRange> .
+<https://smartbridgefm.github.io/bmon/AlarmRange> <http://www.w3.org/2000/01/rdf-schema#comment> "Value outside of acceptable range" .
+# 
+# https://smartbridgefm.github.io/bmon/Any
+<https://smartbridgefm.github.io/bmon/Any> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://smartbridgefm.github.io/bmon/Any> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://smartbridgefm.github.io/bmon/HistoryFunctionType> .
+# 
+# https://smartbridgefm.github.io/bmon/Avg
+<https://smartbridgefm.github.io/bmon/Avg> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://smartbridgefm.github.io/bmon/Avg> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://smartbridgefm.github.io/bmon/HistoryFunctionType> .
+# 
+# https://smartbridgefm.github.io/bmon/Corrosion
+<https://smartbridgefm.github.io/bmon/Corrosion> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://smartbridgefm.github.io/bmon/Corrosion> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/ns/sosa/ObservableProperty> .
+# 
+# https://smartbridgefm.github.io/bmon/CorrosionSensor
+<https://smartbridgefm.github.io/bmon/CorrosionSensor> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://smartbridgefm.github.io/bmon/CorrosionSensor> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://smartbridgefm.github.io/bmon/StructureSensor> .
+<https://smartbridgefm.github.io/bmon/CorrosionSensor> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid6 .
+_:genid6 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid6 <http://www.w3.org/2002/07/owl#onProperty> <http://www.w3.org/ns/sosa/observes> .
+_:genid6 <http://www.w3.org/2002/07/owl#allValuesFrom> <https://smartbridgefm.github.io/bmon/Corrosion> .
+# 
+# https://smartbridgefm.github.io/bmon/DataRequest
+<https://smartbridgefm.github.io/bmon/DataRequest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://smartbridgefm.github.io/bmon/DataRequest> <http://www.w3.org/2000/01/rdf-schema#comment> "Parameters of a request" .
+# 
+# https://smartbridgefm.github.io/bmon/Displacement
+<https://smartbridgefm.github.io/bmon/Displacement> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://smartbridgefm.github.io/bmon/Displacement> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/ns/sosa/ObservableProperty> .
+# 
+# https://smartbridgefm.github.io/bmon/DisplacementSensor
+<https://smartbridgefm.github.io/bmon/DisplacementSensor> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://smartbridgefm.github.io/bmon/DisplacementSensor> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://smartbridgefm.github.io/bmon/EntitySensor> .
+<https://smartbridgefm.github.io/bmon/DisplacementSensor> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid7 .
+_:genid7 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid7 <http://www.w3.org/2002/07/owl#onProperty> <http://www.w3.org/ns/sosa/observes> .
+_:genid7 <http://www.w3.org/2002/07/owl#allValuesFrom> <https://smartbridgefm.github.io/bmon/Displacement> .
+# 
+# https://smartbridgefm.github.io/bmon/Entity
+<https://smartbridgefm.github.io/bmon/Entity> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://smartbridgefm.github.io/bmon/Entity> <http://www.w3.org/2000/01/rdf-schema#comment> "Entity that is observed or with respect to whom the location offset is specified" .
+# 
+# https://smartbridgefm.github.io/bmon/EntitySensor
+<https://smartbridgefm.github.io/bmon/EntitySensor> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://smartbridgefm.github.io/bmon/EntitySensor> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/ns/sosa/Sensor> .
+<https://smartbridgefm.github.io/bmon/EntitySensor> <http://www.w3.org/2000/01/rdf-schema#comment> "Sensor observing a fixed entity" .
+# 
+# https://smartbridgefm.github.io/bmon/FiberStrain
+<https://smartbridgefm.github.io/bmon/FiberStrain> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://smartbridgefm.github.io/bmon/FiberStrain> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://smartbridgefm.github.io/bmon/StrainGauge> .
+# 
+# https://smartbridgefm.github.io/bmon/FiberStrainTemperatureCompensated
+<https://smartbridgefm.github.io/bmon/FiberStrainTemperatureCompensated> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://smartbridgefm.github.io/bmon/FiberStrainTemperatureCompensated> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://smartbridgefm.github.io/bmon/FiberStrain> .
+<https://smartbridgefm.github.io/bmon/FiberStrainTemperatureCompensated> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid8 .
+_:genid8 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid8 <http://www.w3.org/2002/07/owl#onProperty> <https://smartbridgefm.github.io/bmon/hasCompensatinTemperature> .
+_:genid8 <http://www.w3.org/2002/07/owl#allValuesFrom> <https://smartbridgefm.github.io/bmon/FiberTemperatureSensor> .
+<https://smartbridgefm.github.io/bmon/FiberStrainTemperatureCompensated> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid9 .
+_:genid9 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid9 <http://www.w3.org/2002/07/owl#onProperty> <https://smartbridgefm.github.io/bmon/hasFiberStrain> .
+_:genid9 <http://www.w3.org/2002/07/owl#allValuesFrom> <https://smartbridgefm.github.io/bmon/FiberStrain> .
+# 
+# https://smartbridgefm.github.io/bmon/FiberTemperatureSensor
+<https://smartbridgefm.github.io/bmon/FiberTemperatureSensor> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://smartbridgefm.github.io/bmon/FiberTemperatureSensor> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://smartbridgefm.github.io/bmon/TemperatureSensor> .
+# 
+# https://smartbridgefm.github.io/bmon/HistoryFunctionType
+<https://smartbridgefm.github.io/bmon/HistoryFunctionType> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# https://smartbridgefm.github.io/bmon/HttpRequest
+<https://smartbridgefm.github.io/bmon/HttpRequest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://smartbridgefm.github.io/bmon/HttpRequest> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://smartbridgefm.github.io/bmon/DataRequest> .
+<https://smartbridgefm.github.io/bmon/HttpRequest> <http://www.w3.org/2000/01/rdf-schema#comment> "Parameters of a request using REST" .
+# 
+# https://smartbridgefm.github.io/bmon/LadderReferencePotentialSensor
+<https://smartbridgefm.github.io/bmon/LadderReferencePotentialSensor> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://smartbridgefm.github.io/bmon/LadderReferencePotentialSensor> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://smartbridgefm.github.io/bmon/ReferencePotentialSensor> .
+# 
+# https://smartbridgefm.github.io/bmon/LimitRange
+<https://smartbridgefm.github.io/bmon/LimitRange> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# https://smartbridgefm.github.io/bmon/LocationInEntity
+<https://smartbridgefm.github.io/bmon/LocationInEntity> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://smartbridgefm.github.io/bmon/LocationInEntity> <http://www.w3.org/2000/01/rdf-schema#comment> "Specifies the location as an offset in the local coordinates of an entity" .
+# 
+# https://smartbridgefm.github.io/bmon/Max
+<https://smartbridgefm.github.io/bmon/Max> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://smartbridgefm.github.io/bmon/Max> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://smartbridgefm.github.io/bmon/HistoryFunctionType> .
+# 
+# https://smartbridgefm.github.io/bmon/Min
+<https://smartbridgefm.github.io/bmon/Min> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://smartbridgefm.github.io/bmon/Min> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://smartbridgefm.github.io/bmon/HistoryFunctionType> .
+# 
+# https://smartbridgefm.github.io/bmon/MonitoringDeployment
+<https://smartbridgefm.github.io/bmon/MonitoringDeployment> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://smartbridgefm.github.io/bmon/MonitoringDeployment> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/ns/ssn/Deployment> .
+# 
+# https://smartbridgefm.github.io/bmon/RainAccumulation
+<https://smartbridgefm.github.io/bmon/RainAccumulation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://smartbridgefm.github.io/bmon/RainAccumulation> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/ns/sosa/ObservableProperty> .
+# 
+# https://smartbridgefm.github.io/bmon/RainAccumulationSensor
+<https://smartbridgefm.github.io/bmon/RainAccumulationSensor> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://smartbridgefm.github.io/bmon/RainAccumulationSensor> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://smartbridgefm.github.io/bmon/WeatherSensor> .
+<https://smartbridgefm.github.io/bmon/RainAccumulationSensor> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid10 .
+_:genid10 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid10 <http://www.w3.org/2002/07/owl#onProperty> <http://www.w3.org/ns/sosa/observes> .
+_:genid10 <http://www.w3.org/2002/07/owl#allValuesFrom> <https://smartbridgefm.github.io/bmon/RainAccumulation> .
+# 
+# https://smartbridgefm.github.io/bmon/RainDuration
+<https://smartbridgefm.github.io/bmon/RainDuration> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://smartbridgefm.github.io/bmon/RainDuration> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/ns/sosa/ObservableProperty> .
+# 
+# https://smartbridgefm.github.io/bmon/RainDurationSensor
+<https://smartbridgefm.github.io/bmon/RainDurationSensor> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://smartbridgefm.github.io/bmon/RainDurationSensor> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://smartbridgefm.github.io/bmon/WeatherSensor> .
+<https://smartbridgefm.github.io/bmon/RainDurationSensor> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid11 .
+_:genid11 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid11 <http://www.w3.org/2002/07/owl#onProperty> <http://www.w3.org/ns/sosa/observes> .
+_:genid11 <http://www.w3.org/2002/07/owl#allValuesFrom> <https://smartbridgefm.github.io/bmon/RainDuration> .
+# 
+# https://smartbridgefm.github.io/bmon/RainIntensity
+<https://smartbridgefm.github.io/bmon/RainIntensity> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://smartbridgefm.github.io/bmon/RainIntensity> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/ns/sosa/ObservableProperty> .
+# 
+# https://smartbridgefm.github.io/bmon/RainIntensitySensor
+<https://smartbridgefm.github.io/bmon/RainIntensitySensor> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://smartbridgefm.github.io/bmon/RainIntensitySensor> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://smartbridgefm.github.io/bmon/WeatherSensor> .
+<https://smartbridgefm.github.io/bmon/RainIntensitySensor> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid12 .
+_:genid12 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid12 <http://www.w3.org/2002/07/owl#onProperty> <http://www.w3.org/ns/sosa/observes> .
+_:genid12 <http://www.w3.org/2002/07/owl#allValuesFrom> <https://smartbridgefm.github.io/bmon/RainIntensity> .
+# 
+# https://smartbridgefm.github.io/bmon/ReferencePotentialSensor
+<https://smartbridgefm.github.io/bmon/ReferencePotentialSensor> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://smartbridgefm.github.io/bmon/ReferencePotentialSensor> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://smartbridgefm.github.io/bmon/CorrosionSensor> .
+# 
+# https://smartbridgefm.github.io/bmon/RelativeHumidity
+<https://smartbridgefm.github.io/bmon/RelativeHumidity> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://smartbridgefm.github.io/bmon/RelativeHumidity> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/ns/sosa/ObservableProperty> .
+# 
+# https://smartbridgefm.github.io/bmon/RelativeHumiditySensor
+<https://smartbridgefm.github.io/bmon/RelativeHumiditySensor> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://smartbridgefm.github.io/bmon/RelativeHumiditySensor> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://smartbridgefm.github.io/bmon/WeatherSensor> .
+<https://smartbridgefm.github.io/bmon/RelativeHumiditySensor> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid13 .
+_:genid13 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid13 <http://www.w3.org/2002/07/owl#onProperty> <http://www.w3.org/ns/sosa/observes> .
+_:genid13 <http://www.w3.org/2002/07/owl#allValuesFrom> <https://smartbridgefm.github.io/bmon/RelativeHumidity> .
+# 
+# https://smartbridgefm.github.io/bmon/SensorSegment
+<https://smartbridgefm.github.io/bmon/SensorSegment> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://smartbridgefm.github.io/bmon/SensorSegment> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/ns/ssn/System> .
+# 
+# https://smartbridgefm.github.io/bmon/Strain
+<https://smartbridgefm.github.io/bmon/Strain> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://smartbridgefm.github.io/bmon/Strain> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/ns/sosa/ObservableProperty> .
+# 
+# https://smartbridgefm.github.io/bmon/StrainGauge
+<https://smartbridgefm.github.io/bmon/StrainGauge> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://smartbridgefm.github.io/bmon/StrainGauge> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://smartbridgefm.github.io/bmon/StructureSensor> .
+<https://smartbridgefm.github.io/bmon/StrainGauge> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid14 .
+_:genid14 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid14 <http://www.w3.org/2002/07/owl#onProperty> <http://www.w3.org/ns/sosa/observes> .
+_:genid14 <http://www.w3.org/2002/07/owl#allValuesFrom> <https://smartbridgefm.github.io/bmon/Strain> .
+# 
+# https://smartbridgefm.github.io/bmon/StructureSensor
+<https://smartbridgefm.github.io/bmon/StructureSensor> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://smartbridgefm.github.io/bmon/StructureSensor> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://smartbridgefm.github.io/bmon/EntitySensor> .
+# 
+# https://smartbridgefm.github.io/bmon/Temperature
+<https://smartbridgefm.github.io/bmon/Temperature> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://smartbridgefm.github.io/bmon/Temperature> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/ns/sosa/ObservableProperty> .
+# 
+# https://smartbridgefm.github.io/bmon/TemperatureSensor
+<https://smartbridgefm.github.io/bmon/TemperatureSensor> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://smartbridgefm.github.io/bmon/TemperatureSensor> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://smartbridgefm.github.io/bmon/EntitySensor> .
+<https://smartbridgefm.github.io/bmon/TemperatureSensor> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid15 .
+_:genid15 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid15 <http://www.w3.org/2002/07/owl#onProperty> <http://www.w3.org/ns/sosa/observes> .
+_:genid15 <http://www.w3.org/2002/07/owl#allValuesFrom> <https://smartbridgefm.github.io/bmon/Temperature> .
+# 
+# https://smartbridgefm.github.io/bmon/Trend
+<https://smartbridgefm.github.io/bmon/Trend> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://smartbridgefm.github.io/bmon/Trend> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://smartbridgefm.github.io/bmon/HistoryFunctionType> .
+# 
+# https://smartbridgefm.github.io/bmon/ValueHistory
+<https://smartbridgefm.github.io/bmon/ValueHistory> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://smartbridgefm.github.io/bmon/ValueHistory> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/ns/sosa/Sample> .
+<https://smartbridgefm.github.io/bmon/ValueHistory> <http://www.w3.org/2000/01/rdf-schema#comment> "History of values" .
+# 
+# https://smartbridgefm.github.io/bmon/WarningRange
+<https://smartbridgefm.github.io/bmon/WarningRange> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://smartbridgefm.github.io/bmon/WarningRange> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://smartbridgefm.github.io/bmon/LimitRange> .
+<https://smartbridgefm.github.io/bmon/WarningRange> <http://www.w3.org/2000/01/rdf-schema#comment> "Value outside of normal range" .
+# 
+# https://smartbridgefm.github.io/bmon/WeatherSensor
+<https://smartbridgefm.github.io/bmon/WeatherSensor> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://smartbridgefm.github.io/bmon/WeatherSensor> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://smartbridgefm.github.io/bmon/EntitySensor> .
+# 
+# https://smartbridgefm.github.io/bmon/WeatherStation
+<https://smartbridgefm.github.io/bmon/WeatherStation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://smartbridgefm.github.io/bmon/WeatherStation> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/ns/ssn/System> .
+# 
+# https://smartbridgefm.github.io/bmon/WindDirection
+<https://smartbridgefm.github.io/bmon/WindDirection> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://smartbridgefm.github.io/bmon/WindDirection> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/ns/sosa/ObservableProperty> .
+# 
+# https://smartbridgefm.github.io/bmon/WindDirectionSensor
+<https://smartbridgefm.github.io/bmon/WindDirectionSensor> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://smartbridgefm.github.io/bmon/WindDirectionSensor> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://smartbridgefm.github.io/bmon/WeatherSensor> .
+<https://smartbridgefm.github.io/bmon/WindDirectionSensor> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid16 .
+_:genid16 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid16 <http://www.w3.org/2002/07/owl#onProperty> <http://www.w3.org/ns/sosa/observes> .
+_:genid16 <http://www.w3.org/2002/07/owl#allValuesFrom> <https://smartbridgefm.github.io/bmon/WindDirection> .
+# 
+# https://smartbridgefm.github.io/bmon/WindSpeed
+<https://smartbridgefm.github.io/bmon/WindSpeed> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://smartbridgefm.github.io/bmon/WindSpeed> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/ns/sosa/ObservableProperty> .
+# 
+# https://smartbridgefm.github.io/bmon/WindSpeedSensor
+<https://smartbridgefm.github.io/bmon/WindSpeedSensor> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://smartbridgefm.github.io/bmon/WindSpeedSensor> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://smartbridgefm.github.io/bmon/WeatherSensor> .
+<https://smartbridgefm.github.io/bmon/WindSpeedSensor> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid17 .
+_:genid17 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid17 <http://www.w3.org/2002/07/owl#onProperty> <http://www.w3.org/ns/sosa/observes> .
+_:genid17 <http://www.w3.org/2002/07/owl#allValuesFrom> <https://smartbridgefm.github.io/bmon/WindSpeed> .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Individuals
+# #
+# #################################################################
+# 
+# 
+# https://smartbridgefm.github.io/bmon/callAddress
+<https://smartbridgefm.github.io/bmon/callAddress> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://smartbridgefm.github.io/bmon/callAddress> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Property> .
+# 
+# https://smartbridgefm.github.io/bmon/channel
+<https://smartbridgefm.github.io/bmon/channel> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://smartbridgefm.github.io/bmon/channel> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Property> .
+# 
+# https://smartbridgefm.github.io/bmon/dataInterface
+<https://smartbridgefm.github.io/bmon/dataInterface> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://smartbridgefm.github.io/bmon/dataInterface> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Property> .
+# 
+# https://smartbridgefm.github.io/bmon/hasAccelerationX
+<https://smartbridgefm.github.io/bmon/hasAccelerationX> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://smartbridgefm.github.io/bmon/hasAccelerationX> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Property> .
+# 
+# https://smartbridgefm.github.io/bmon/hasAccelerationY
+<https://smartbridgefm.github.io/bmon/hasAccelerationY> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://smartbridgefm.github.io/bmon/hasAccelerationY> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Property> .
+# 
+# https://smartbridgefm.github.io/bmon/hasAccelerationZ
+<https://smartbridgefm.github.io/bmon/hasAccelerationZ> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://smartbridgefm.github.io/bmon/hasAccelerationZ> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Property> .
+# 
+# https://smartbridgefm.github.io/bmon/hasBasicAcceleration
+<https://smartbridgefm.github.io/bmon/hasBasicAcceleration> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://smartbridgefm.github.io/bmon/hasBasicAcceleration> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Property> .
+# 
+# https://smartbridgefm.github.io/bmon/hasCompassAcceleration
+<https://smartbridgefm.github.io/bmon/hasCompassAcceleration> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://smartbridgefm.github.io/bmon/hasCompassAcceleration> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Property> .
+# 
+# https://smartbridgefm.github.io/bmon/hasCompensatingTemperature
+<https://smartbridgefm.github.io/bmon/hasCompensatingTemperature> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://smartbridgefm.github.io/bmon/hasCompensatingTemperature> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Property> .
+# 
+# https://smartbridgefm.github.io/bmon/hasFiberStrain
+<https://smartbridgefm.github.io/bmon/hasFiberStrain> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://smartbridgefm.github.io/bmon/hasFiberStrain> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Property> .
+# 
+# https://smartbridgefm.github.io/bmon/hasGyroscopicAcceleration
+<https://smartbridgefm.github.io/bmon/hasGyroscopicAcceleration> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://smartbridgefm.github.io/bmon/hasGyroscopicAcceleration> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Property> .
+# 
+# https://smartbridgefm.github.io/bmon/httpApiKey
+<https://smartbridgefm.github.io/bmon/httpApiKey> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://smartbridgefm.github.io/bmon/httpApiKey> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Property> .
+# 
+# https://smartbridgefm.github.io/bmon/httpHeader
+<https://smartbridgefm.github.io/bmon/httpHeader> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://smartbridgefm.github.io/bmon/httpHeader> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Property> .
+# 
+# https://smartbridgefm.github.io/bmon/httpMethod
+<https://smartbridgefm.github.io/bmon/httpMethod> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://smartbridgefm.github.io/bmon/httpMethod> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Property> .
+# 
+# https://smartbridgefm.github.io/bmon/httpRequestBody
+<https://smartbridgefm.github.io/bmon/httpRequestBody> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://smartbridgefm.github.io/bmon/httpRequestBody> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Property> .
+# 
+# https://smartbridgefm.github.io/bmon/limitLabel
+<https://smartbridgefm.github.io/bmon/limitLabel> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://smartbridgefm.github.io/bmon/limitLabel> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Property> .
+# 
+# https://smartbridgefm.github.io/bmon/limits
+<https://smartbridgefm.github.io/bmon/limits> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://smartbridgefm.github.io/bmon/limits> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Property> .
+# 
+# https://smartbridgefm.github.io/bmon/locatedAt
+<https://smartbridgefm.github.io/bmon/locatedAt> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://smartbridgefm.github.io/bmon/locatedAt> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Property> .
+# 
+# https://smartbridgefm.github.io/bmon/locationEntity
+<https://smartbridgefm.github.io/bmon/locationEntity> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://smartbridgefm.github.io/bmon/locationEntity> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Property> .
+# 
+# https://smartbridgefm.github.io/bmon/maxLimit
+<https://smartbridgefm.github.io/bmon/maxLimit> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://smartbridgefm.github.io/bmon/maxLimit> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Property> .
+# 
+# https://smartbridgefm.github.io/bmon/minLimit
+<https://smartbridgefm.github.io/bmon/minLimit> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://smartbridgefm.github.io/bmon/minLimit> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Property> .
+# 
+# https://smartbridgefm.github.io/bmon/observedEntity
+<https://smartbridgefm.github.io/bmon/observedEntity> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://smartbridgefm.github.io/bmon/observedEntity> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Property> .
+# 
+# https://smartbridgefm.github.io/bmon/offsetX
+<https://smartbridgefm.github.io/bmon/offsetX> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://smartbridgefm.github.io/bmon/offsetX> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Property> .
+# 
+# https://smartbridgefm.github.io/bmon/offsetY
+<https://smartbridgefm.github.io/bmon/offsetY> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://smartbridgefm.github.io/bmon/offsetY> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Property> .
+# 
+# https://smartbridgefm.github.io/bmon/offsetZ
+<https://smartbridgefm.github.io/bmon/offsetZ> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://smartbridgefm.github.io/bmon/offsetZ> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Property> .
+# 
+# https://smartbridgefm.github.io/bmon/segment
+<https://smartbridgefm.github.io/bmon/segment> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://smartbridgefm.github.io/bmon/segment> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Property> .
+# 
+# https://smartbridgefm.github.io/bmon/unit
+<https://smartbridgefm.github.io/bmon/unit> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://smartbridgefm.github.io/bmon/unit> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Property> .
+# 
+# https://smartbridgefm.github.io/bmon/userInterfaceAddress
+<https://smartbridgefm.github.io/bmon/userInterfaceAddress> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://smartbridgefm.github.io/bmon/userInterfaceAddress> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Property> .
+# 
+# https://smartbridgefm.github.io/bmon/valueFunction
+<https://smartbridgefm.github.io/bmon/valueFunction> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://smartbridgefm.github.io/bmon/valueFunction> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Property> .
+# 
+# https://smartbridgefm.github.io/bmon/valuesCount
+<https://smartbridgefm.github.io/bmon/valuesCount> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://smartbridgefm.github.io/bmon/valuesCount> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Property> .
+# 
+# https://smartbridgefm.github.io/bmon/valuesFrom
+<https://smartbridgefm.github.io/bmon/valuesFrom> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://smartbridgefm.github.io/bmon/valuesFrom> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Property> .
+# 
+# https://smartbridgefm.github.io/bmon/valuesStep
+<https://smartbridgefm.github.io/bmon/valuesStep> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://smartbridgefm.github.io/bmon/valuesStep> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Property> .
+# 
+# https://smartbridgefm.github.io/bmon/valuesTo
+<https://smartbridgefm.github.io/bmon/valuesTo> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://smartbridgefm.github.io/bmon/valuesTo> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Property> .
+# 
+_:genid18 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://xmlns.com/foaf/0.1/Agent> .
+_:genid18 <http://xmlns.com/foaf/0.1/name> "SmartBridgeFM project"@en .
+_:genid19 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://xmlns.com/foaf/0.1/Person> .
+_:genid19 <http://xmlns.com/foaf/0.1/name> "Seppo Törmä" .
+_:genid20 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://xmlns.com/foaf/0.1/Person> .
+_:genid20 <http://xmlns.com/foaf/0.1/name> "Markku Kiviniemi" .
+# 
+# 
+# #################################################################
+# #
+# #    Annotations
+# #
+# #################################################################
+# 
+# 
+<https://smartbridgefm.github.io/bmon/callAddress> <http://www.w3.org/2000/01/rdf-schema#comment> "Address of a call" .
+# 
+<https://smartbridgefm.github.io/bmon/httpApiKey> <http://www.w3.org/2000/01/rdf-schema#comment> "Association of an api key to a call" .
+# 
+<https://smartbridgefm.github.io/bmon/httpHeader> <http://www.w3.org/2000/01/rdf-schema#comment> "Association of a header to a call" .
+# 
+<https://smartbridgefm.github.io/bmon/httpMethod> <http://www.w3.org/2000/01/rdf-schema#comment> "Method used in a REST call" .
+# 
+<https://smartbridgefm.github.io/bmon/httpRequestBody> <http://www.w3.org/2000/01/rdf-schema#comment> "Association of a body to a call" .
+# 
+# Generated by the OWL API (version 5.1.7) https://github.com/owlcs/owlapi/
